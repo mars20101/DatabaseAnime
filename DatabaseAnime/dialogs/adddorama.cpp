@@ -2,6 +2,7 @@
 #include "ui_adddorama.h"
 #include "mngrquerys.h"
 #include "definespath.h"
+#include "widgets/tags.h"
 
 #include <QFileDialog>
 #include <QDesktopServices>
@@ -65,7 +66,8 @@ void DialogAddDorama::setDataInField()
     ui->SpinBox_vSpec->setValue( record.value( Tables::Dorama::Fields::vSeriesSpecial ).toInt() );
     ui->SpinBox_vMovie->setValue( record.value( Tables::Dorama::Fields::vSeriesMovie ).toInt() );
 
-    ui->LineEdit_Tags->setText( record.value( Tables::Dorama::Fields::Tags ).toString() );
+    QStringList customTags = TagsHelper::markTagsFromText( ui->ListView_Tags, &_tags, record.value( Tables::Dorama::Fields::Tags ).toString() );
+    ui->LineEdit_Tags->setText( customTags.join( ", " ) );
     ui->PlainTextEdit_Description->setPlainText( record.value( Tables::Dorama::Fields::Description ).toString() );
     ui->PlainTextEdit_Actors->setPlainText( record.value( Tables::Dorama::Fields::Actors ).toString() );
     ui->LineEdit_Dir->setText( record.value( Tables::Dorama::Fields::Dir ).toString() );
@@ -216,25 +218,7 @@ bool DialogAddDorama::insert_Dorama(){
     data[Year]           = (ui->CBox_Year->isChecked())? ui->SpinBox_Year->value() : 0;
     data[Season]         = ui->SpinBox_Season->value();
 
-    QString tagsList;
-    QStringList list;
-    QModelIndexList mlist = ui->ListView_Tags->selectionModel()->selectedIndexes();
-    for(int i = 0;i < mlist.count();i++){
-        list.append(mlist.at(i).data(Qt::DisplayRole).toString());
-    }
-
-    for(int i = 0; i < list.count();i++){
-        if( i != 0 ){
-            tagsList += ", ";
-        }
-        tagsList += list.at(i);
-    }
-    if( !ui->LineEdit_Tags->text().isEmpty() && !tagsList.isEmpty() ){
-        tagsList += ", ";
-    }
-    tagsList += ui->LineEdit_Tags->text();
-
-    data[Tags]         = tagsList;
+    data[Tags]         = TagsHelper::buildTagsText( ui->ListView_Tags, ui->LineEdit_Tags->text() );
     data[Description]  = ui->PlainTextEdit_Description->toPlainText();
     data[Actors]       = ui->PlainTextEdit_Actors->toPlainText();
     data[Url]          = ui->LineEdit_URL->text();

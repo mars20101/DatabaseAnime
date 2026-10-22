@@ -2,6 +2,7 @@
 #include "ui_addanime.h"
 #include "mngrquerys.h"
 #include "definespath.h"
+#include "widgets/tags.h"
 
 #include <QFileDialog>
 #include <QDesktopServices>
@@ -103,7 +104,8 @@ void DialogAddAnime::setDataInField()
     ui->SpinBox_vSpec->setValue(  record.value( Tables::Anime::Fields::vSeriesSpecial ).toInt() );
     ui->SpinBox_vMovie->setValue( record.value( Tables::Anime::Fields::vSeriesMovie   ).toInt() );
 
-    ui->LineEdit_Tags->setText( record.value( Tables::Anime::Fields::Tags ).toString() );
+    QStringList customTags = TagsHelper::markTagsFromText( ui->ListView_Tags, &_tags, record.value( Tables::Anime::Fields::Tags ).toString() );
+    ui->LineEdit_Tags->setText( customTags.join( ", " ) );
     ui->PlainTextEdit_Description->setPlainText( record.value( Tables::Anime::Fields::Description ).toString() );
     ui->LineEdit_Dir->setText( record.value( Tables::Anime::Fields::Dir ).toString() );
     ui->LineEdit_URL->setText( record.value( Tables::Anime::Fields::Url ).toString() );
@@ -325,25 +327,7 @@ bool DialogAddAnime::insert_Anime(){
     data[Season]         = ui->SpinBox_Season->value();
     data[Studios]        = ui->ComboBox_Studio->currentText();
 
-    QString tagsList;
-    QStringList list;
-    QModelIndexList mlist = ui->ListView_Tags->selectionModel()->selectedIndexes();
-    for(int i = 0;i < mlist.count();i++){
-        list.append(mlist.at(i).data(Qt::DisplayRole).toString());
-    }
-
-    for(int i = 0; i < list.count();i++){
-        if( i != 0 ){
-            tagsList += ", ";
-        }
-        tagsList += list.at(i);
-    }
-    if( !ui->LineEdit_Tags->text().isEmpty() && !tagsList.isEmpty() ){
-        tagsList += ", ";
-    }
-    tagsList += ui->LineEdit_Tags->text();
-
-    data[Tags]        = tagsList;
+    data[Tags]        = TagsHelper::buildTagsText( ui->ListView_Tags, ui->LineEdit_Tags->text() );
     data[Description] = ui->PlainTextEdit_Description->toPlainText();
     data[Url]         = ui->LineEdit_URL->text();
     data[Dir]         = ui->LineEdit_Dir->text();
@@ -542,7 +526,8 @@ void DialogAddAnime::setRecivedData(QMap<QString, QVariant> data)
         }
     }
 
-    ui->LineEdit_Tags->setText( data[Tags].toString() );
+    QStringList customTags = TagsHelper::markTagsFromText( ui->ListView_Tags, &_tags, data[Tags].toString() );
+    ui->LineEdit_Tags->setText( customTags.join( ", " ) );
 
     ui->PlainTextEdit_Description->setPlainText( data[Description].toString() );
 

@@ -2,6 +2,7 @@
 #include "ui_addmanga.h"
 #include "mngrquerys.h"
 #include "definespath.h"
+#include "widgets/tags.h"
 
 #include <QFileDialog>
 #include <QDesktopServices>
@@ -70,7 +71,8 @@ void DialogAddManga::setDataInFields()
     ui->SpinBox_vCh->setValue( record.value( Tables::Manga::Fields::vCh ).toInt() );
     ui->SpinBox_vPages->setValue( record.value( Tables::Manga::Fields::vPages ).toInt() );
 
-    ui->LineEdit_Tags->setText( record.value( Tables::Manga::Fields::Tags ).toString() );
+    QStringList customTags = TagsHelper::markTagsFromText( ui->ListView_Tags, &_tags, record.value( Tables::Manga::Fields::Tags ).toString() );
+    ui->LineEdit_Tags->setText( customTags.join( ", " ) );
     ui->PlainTextEdit_Description->setPlainText( record.value( Tables::Manga::Fields::Description ).toString() );
     ui->LineEdit_Dir->setText( record.value( Tables::Manga::Fields::Dir ).toString() );
     ui->LineEdit_URL->setText( record.value( Tables::Manga::Fields::Url ).toString() );
@@ -188,8 +190,8 @@ DialogAddManga::DialogAddManga(QWidget *parent, unsigned long long record_id ) :
     initTitleCompleter();
     createOptionalFields();
     setTabOrders();
-    setDataInFields();
     initTags();
+    setDataInFields();
 }
 
 DialogAddManga::DialogAddManga(QWidget *parent):
@@ -300,25 +302,7 @@ bool DialogAddManga::insert_Manga(){
     data[vPages] = ui->SpinBox_vPages->value();
     data[Year]   = (ui->CBox_Year->isChecked()) ? ui->SpinBox_Year->value() : 0 ;
 
-    QString tagsList;
-    QStringList list;
-    QModelIndexList mlist = ui->ListView_Tags->selectionModel()->selectedIndexes();
-    for(int i = 0;i < mlist.count();i++){
-        list.append(mlist.at(i).data(Qt::DisplayRole).toString());
-    }
-
-    for(int i = 0; i < list.count();i++){
-        if( i != 0 ){
-            tagsList += ", ";
-        }
-        tagsList += list.at(i);
-    }
-    if( !ui->LineEdit_Tags->text().isEmpty() && !tagsList.isEmpty() ){
-        tagsList += ", ";
-    }
-    tagsList += ui->LineEdit_Tags->text();
-
-    data[Tags]         = tagsList;
+    data[Tags]         = TagsHelper::buildTagsText( ui->ListView_Tags, ui->LineEdit_Tags->text() );
     data[Description]  = ui->PlainTextEdit_Description->toPlainText();
     data[Url]          = ui->LineEdit_URL->text();
     data[Dir]          = ui->LineEdit_Dir->text();
@@ -480,7 +464,8 @@ void DialogAddManga::setRecivedData(QMap<QString, QVariant> data)
     ui->SpinBox_aVol->setValue( data[Vol].toInt() );
     ui->SpinBox_aCh->setValue( data[Ch].toInt() );
 
-    ui->LineEdit_Tags->setText( data[Tags].toString() );
+    QStringList customTags = TagsHelper::markTagsFromText( ui->ListView_Tags, &_tags, data[Tags].toString() );
+    ui->LineEdit_Tags->setText( customTags.join( ", " ) );
 
     ui->PlainTextEdit_Description->setPlainText( data[Description].toString() );
 

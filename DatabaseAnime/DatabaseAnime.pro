@@ -29,6 +29,7 @@ HEADERS += \
     dialogs/addmanga.h \
     dialogs/settings.h \
     widgets/imagecover.h \
+    widgets/tags.h \
     widgets/lookprogressbar.h \
     widgets/stackwgt_mousehideover.h \
     definespath.h \

@@ -2,6 +2,7 @@
 #include "ui_addamv.h"
 #include "mngrquerys.h"
 #include "definespath.h"
+#include "widgets/tags.h"
 
 #include <QFileDialog>
 #include <QDesktopServices>
@@ -29,7 +30,8 @@ void DialogAddAmv::setDataInField()
     ui->LineEdit_Contestant->setText( record.value( Tables::Amv::Fields::Contestant ).toString() );
     if( record.value( Tables::Amv::Fields::Year ).toInt() != 0 )
         ui->SpinBox_Year->setValue( record.value( Tables::Amv::Fields::Year ).toInt() );
-    ui->LineEdit_Tags->setText( record.value( Tables::Amv::Fields::Tags ).toString() );
+    QStringList customTags = TagsHelper::markTagsFromText( ui->LView_Tags, &_tags, record.value( Tables::Amv::Fields::Tags ).toString() );
+    ui->LineEdit_Tags->setText( customTags.join( ", " ) );
     ui->PlainTextEdit_AuthorComment->setPlainText( record.value( Tables::Amv::Fields::AuthorComment ).toString() );
     ui->plainTextEdit_ContAnime->setPlainText( record.value( Tables::Amv::Fields::ContainingAnime ).toString() );
     ui->plainTextEdit_ContMusic->setPlainText( record.value( Tables::Amv::Fields::ContainingMusic ).toString() );
@@ -133,25 +135,7 @@ bool DialogAddAmv::insert_Amv(){
     data[Score]         =  0;
     data[Year]          = (ui->CBox_Year->isChecked())? ui->SpinBox_Year->value() : 0;
 
-    QString tagsList;
-    QStringList list;
-    QModelIndexList mlist = ui->LView_Tags->selectionModel()->selectedIndexes();
-    for(int i = 0; i < mlist.count(); i++){
-        list.append(mlist.at(i).data(Qt::DisplayRole).toString());
-    }
-
-    for(int i = 0; i < list.count();i++){
-        if( i != 0 ){
-            tagsList += ", ";
-        }
-        tagsList += list.at(i);
-    }
-    if( !ui->LineEdit_Tags->text().isEmpty() && !tagsList.isEmpty() ){
-        tagsList += ", ";
-    }
-    tagsList += ui->LineEdit_Tags->text();
-
-    data[Tags]            = tagsList;
+    data[Tags]            = TagsHelper::buildTagsText( ui->LView_Tags, ui->LineEdit_Tags->text() );
     data[ContainingMusic] = ui->plainTextEdit_ContMusic->toPlainText();
     data[ContainingAnime] = ui->plainTextEdit_ContAnime->toPlainText();
     data[AuthorComment]   = ui->PlainTextEdit_AuthorComment->toPlainText();

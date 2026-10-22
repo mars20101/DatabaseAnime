@@ -10,3 +10,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   `foreach`, `QPalette::ButtonText`, `QHBoxLayout::setMargin`, old `enterEvent` signature)
   instead of using Qt5Compat
 - Added new settings for change Shikimori API URL
+- Fixed tags panel in edit dialogs (anime, manga, dorama, AMV): tags saved in a record are now
+  marked in the genre list when opening for editing, so they can be added/removed by clicking,
+  and saving no longer duplicates tags present both in the list selection and the text field
