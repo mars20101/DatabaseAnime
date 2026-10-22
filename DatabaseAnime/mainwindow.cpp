@@ -525,8 +525,10 @@ void MainWindow::selectAnimeData()
     _ScrArea_propertyes->setVerticalScrollBarPolicy(Qt::ScrollBarAsNeeded);
     _ScrArea_propertyes->setMinimumWidth(300);
 
-    QFormLayout *FLay_propertyes = new QFormLayout(_ScrArea_propertyes);
-    _ScrArea_propertyes->setLayout(FLay_propertyes);
+    QWidget *Wgt_propertyes = new QWidget;
+    QFormLayout *FLay_propertyes = new QFormLayout( Wgt_propertyes );
+    _ScrArea_propertyes->setWidget( Wgt_propertyes );
+    _ScrArea_propertyes->setWidgetResizable( true );
     ui->VLay_AnimeDescrFull->addWidget(_ScrArea_propertyes);
 
     // Title
@@ -651,8 +653,10 @@ void MainWindow::selectMangaData()
     _ScrArea_propertyes->setSizeAdjustPolicy(QAbstractScrollArea::AdjustToContents);
     _ScrArea_propertyes->setMinimumWidth(300);
 
-    QFormLayout *FLay_propertyes = new QFormLayout(_ScrArea_propertyes);
-    _ScrArea_propertyes->setLayout(FLay_propertyes);
+    QWidget *Wgt_propertyes = new QWidget;
+    QFormLayout *FLay_propertyes = new QFormLayout( Wgt_propertyes );
+    _ScrArea_propertyes->setWidget( Wgt_propertyes );
+    _ScrArea_propertyes->setWidgetResizable( true );
     ui->VLay_AnimeDescrFull->addWidget(_ScrArea_propertyes);
 
     // Title
@@ -732,8 +736,10 @@ void MainWindow::selectAmvData()
     deleteLookProgressBars();
 
     _ScrArea_propertyes = new QScrollArea;
-    QFormLayout *FLay_propertyes = new QFormLayout(_ScrArea_propertyes);
-    _ScrArea_propertyes->setLayout(FLay_propertyes);
+    QWidget *Wgt_propertyes = new QWidget;
+    QFormLayout *FLay_propertyes = new QFormLayout( Wgt_propertyes );
+    _ScrArea_propertyes->setWidget( Wgt_propertyes );
+    _ScrArea_propertyes->setWidgetResizable( true );
     _ScrArea_propertyes->setSizeAdjustPolicy(QAbstractScrollArea::AdjustToContents);
     ui->VLay_AnimeDescrFull->addWidget(_ScrArea_propertyes);
 
@@ -857,8 +863,10 @@ void MainWindow::selectDoramaData()
     _ScrArea_propertyes->setVerticalScrollBarPolicy(Qt::ScrollBarAsNeeded);
     _ScrArea_propertyes->setMinimumWidth(300);
 
-    QFormLayout *FLay_propertyes = new QFormLayout(_ScrArea_propertyes);
-    _ScrArea_propertyes->setLayout(FLay_propertyes);
+    QWidget *Wgt_propertyes = new QWidget;
+    QFormLayout *FLay_propertyes = new QFormLayout( Wgt_propertyes );
+    _ScrArea_propertyes->setWidget( Wgt_propertyes );
+    _ScrArea_propertyes->setWidgetResizable( true );
     ui->VLay_AnimeDescrFull->addWidget(_ScrArea_propertyes);
 
     // Title

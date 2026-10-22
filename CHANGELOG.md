@@ -13,3 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fixed tags panel in edit dialogs (anime, manga, dorama, AMV): tags saved in a record are now
   marked in the genre list when opening for editing, so they can be added/removed by clicking,
   and saving no longer duplicates tags present both in the list selection and the text field
+- Fixed record information panel (anime, manga, dorama, AMV): properties are now placed in a
+  widget inside the scroll area (`setWidget`/`setWidgetResizable`) instead of laying out the
+  scroll area viewport directly, so long wrapped texts (genres, studio, alt title, description)
+  no longer get squeezed and overlap when the panel is shorter than the content
