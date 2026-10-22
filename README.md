@@ -26,7 +26,7 @@
   - https://aur.archlinux.org/packages/databaseanime/
 
 ### Зависимости
-- Qt >= 5.3.0
+- Qt >= 6.0.0
 - SQLite >= 3.7
 
 ### Разработка

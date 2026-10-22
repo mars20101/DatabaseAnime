@@ -35,7 +35,7 @@ void StackWgt_MouseHideOver::leaveEvent(QEvent *e)
     e->accept();
 }
 
-void StackWgt_MouseHideOver::enterEvent(QEvent *e)
+void StackWgt_MouseHideOver::enterEvent(QEnterEvent *e)
 {
     hover = true;
     QTimer::singleShot(300, this, SLOT( showDir() ) );

@@ -22,7 +22,7 @@ QString MngrQuerys::fieldToString(Tables::UniformField::field field, sections::s
                 case sections::dorama :
                     return Tables::Dorama::Fields::Title;
                 case sections::none :
-                    return QString::null;
+                    return QString();
             }
         case ALT_TITLE :
             switch(section){
@@ -35,7 +35,7 @@ QString MngrQuerys::fieldToString(Tables::UniformField::field field, sections::s
                 case sections::dorama :
                     return Tables::Dorama::Fields::AltTitle;
                 case sections::none :
-                    return QString::null;
+                    return QString();
             }
         case Url :
             switch(section){
@@ -48,7 +48,7 @@ QString MngrQuerys::fieldToString(Tables::UniformField::field field, sections::s
                 case sections::dorama :
                     return Tables::Dorama::Fields::Url;
                 case sections::none :
-                    return QString::null;
+                    return QString();
             }
         case Dir :
             switch(section){
@@ -61,7 +61,7 @@ QString MngrQuerys::fieldToString(Tables::UniformField::field field, sections::s
                 case sections::dorama :
                     return Tables::Dorama::Fields::Dir;
                 case sections::none :
-                    return QString::null;
+                    return QString();
             }
         case ImagePath :
             switch(section){
@@ -74,10 +74,10 @@ QString MngrQuerys::fieldToString(Tables::UniformField::field field, sections::s
                 case sections::dorama :
                     return Tables::Dorama::Fields::ImagePath;
                 case sections::none :
-                    return QString::null;
+                    return QString();
             }
     }
-    return QString::null;
+    return QString();
 }
 
 QString MngrQuerys::filterToString(Filter::filter filter)
@@ -116,7 +116,7 @@ QString MngrQuerys::sortToString(Sort::sort sort)
         return "ORDER BY Year DESC, Title ASC";
     case Sort::none :
     default:
-        return QString::null;
+        return QString();
     }
 }
 
@@ -137,7 +137,7 @@ QString MngrQuerys::getTableName(sections::section table)
             break;
         case sections::none :
         default:
-            return QString::null;
+            return QString();
     }
 }
 

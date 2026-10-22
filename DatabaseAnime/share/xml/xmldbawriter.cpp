@@ -19,7 +19,7 @@ QString XmlDbaWriter::getSectionName(sections::section section)
         return QString("Dorama");
     case sections::none : ;
     }
-    return QString::null;
+    return QString();
 }
 
 void XmlDbaWriter::startSection(sections::section section)

@@ -3,6 +3,7 @@
 
 #include <QStackedWidget>
 #include <QEvent>
+#include <QEnterEvent>
 
 class StackWgt_MouseHideOver : public QStackedWidget
 {
@@ -23,7 +24,7 @@ public slots:
 
 protected:
     virtual void leaveEvent(QEvent*);
-    virtual void enterEvent(QEvent*);
+    virtual void enterEvent(QEnterEvent*);
 };
 
 #endif // STACKWGT_MOUSEHIDEOVER_H

@@ -32,9 +32,9 @@ void Test_DefinesPath::home()
 
 void Test_DefinesPath::share()
 {
-    QStringList paths = QStandardPaths::standardLocations( QStandardPaths::DataLocation );
+    QStringList paths = QStandardPaths::standardLocations( QStandardPaths::AppDataLocation );
     QStringList newPaths;
-    foreach (QString path, paths) {
+    for (const QString &path : paths) {
         newPaths << path + QDir::separator();
     }
     QCOMPARE(DefinesPath::share(), newPaths );
@@ -43,7 +43,7 @@ void Test_DefinesPath::share()
 void Test_DefinesPath::appData()
 {
     QCOMPARE(DefinesPath::appData(true),
-             QStandardPaths::writableLocation( QStandardPaths::DataLocation ) + QDir::separator() );
+             QStandardPaths::writableLocation( QStandardPaths::AppDataLocation ) + QDir::separator() );
 
     QSettings s;
     s.setValue("WorkDirectory", "/tmp/LibertaSoft/DatabaseAnine/");
@@ -58,16 +58,16 @@ void Test_DefinesPath::appData()
 void Test_DefinesPath::dbPath()
 {
     QCOMPARE(DefinesPath::dbPath(false),
-             QStandardPaths::writableLocation( QStandardPaths::DataLocation ) + QDir::separator() );
+             QStandardPaths::writableLocation( QStandardPaths::AppDataLocation ) + QDir::separator() );
     QCOMPARE(DefinesPath::dbPath(true),
-             QStandardPaths::writableLocation( QStandardPaths::DataLocation ) + QDir::separator()
+             QStandardPaths::writableLocation( QStandardPaths::AppDataLocation ) + QDir::separator()
              + QString("DatabaseAnime.sqlite") );
 }
 
 void Test_DefinesPath::animeCovers()
 {
     QCOMPARE(DefinesPath::animeCovers(),
-             QStandardPaths::writableLocation( QStandardPaths::DataLocation ) + QDir::separator()
+             QStandardPaths::writableLocation( QStandardPaths::AppDataLocation ) + QDir::separator()
              + "animeCovers" + QDir::separator() );
     QCOMPARE(DefinesPath::animeCovers("/tmp/"),
              QString("/tmp/animeCovers") + QDir::separator() );
@@ -75,7 +75,7 @@ void Test_DefinesPath::animeCovers()
 void Test_DefinesPath::mangaCovers()
 {
     QCOMPARE(DefinesPath::mangaCovers(),
-             QStandardPaths::writableLocation( QStandardPaths::DataLocation ) + QDir::separator()
+             QStandardPaths::writableLocation( QStandardPaths::AppDataLocation ) + QDir::separator()
              + "mangaCovers" + QDir::separator() );
     QCOMPARE(DefinesPath::mangaCovers("/tmp/"),
              QString("/tmp/mangaCovers") + QDir::separator() );
@@ -83,7 +83,7 @@ void Test_DefinesPath::mangaCovers()
 void Test_DefinesPath::amvCovers()
 {
     QCOMPARE(DefinesPath::amvCovers(),
-             QStandardPaths::writableLocation( QStandardPaths::DataLocation ) + QDir::separator()
+             QStandardPaths::writableLocation( QStandardPaths::AppDataLocation ) + QDir::separator()
              + "amvCovers" + QDir::separator() );
     QCOMPARE(DefinesPath::amvCovers("/tmp/"),
              QString("/tmp/amvCovers") + QDir::separator() );
@@ -91,7 +91,7 @@ void Test_DefinesPath::amvCovers()
 void Test_DefinesPath::doramaCovers()
 {
     QCOMPARE(DefinesPath::doramaCovers(),
-             QStandardPaths::writableLocation( QStandardPaths::DataLocation ) + QDir::separator()
+             QStandardPaths::writableLocation( QStandardPaths::AppDataLocation ) + QDir::separator()
              + "doramaCovers" + QDir::separator() );
     QCOMPARE(DefinesPath::doramaCovers("/tmp/"),
              QString("/tmp/doramaCovers") + QDir::separator() );

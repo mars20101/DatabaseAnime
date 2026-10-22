@@ -5,6 +5,7 @@
 
 #include <QFileDialog>
 #include <QDesktopServices>
+#include <QRegularExpression>
 
 #include <QMessageBox>
 #include <QDebug>
@@ -200,7 +201,7 @@ bool DialogAddDorama::insert_Dorama(){
     data[isAdult]        = false;
     data[id]             = _recordId;
 
-    QRegExp rx("<.*>"); rx.setMinimal(true);
+    QRegularExpression rx("<.*?>");
     data[Title]          = ui->LineEdit_Title->text().remove(rx);
 
     data[AltTitle]       = (LineEdit_AltTitle)?this->LineEdit_AltTitle->text():ui->LineEdit_Title->text();

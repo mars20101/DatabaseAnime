@@ -3,8 +3,7 @@ QT       += core gui widgets sql xml network
 TARGET = DatabaseAnime
 TEMPLATE = app
 
-CONFIG += c++11
-QMAKE_CXXFLAGS += -std=c++11
+CONFIG += c++17
 
 VERSION = 1.4.4.4
 #Last digit:

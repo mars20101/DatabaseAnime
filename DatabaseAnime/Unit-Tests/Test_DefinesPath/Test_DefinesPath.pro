@@ -9,7 +9,7 @@ QT       += testlib
 QT       -= gui
 
 TARGET = Test_DefinesPath
-CONFIG   += console
+CONFIG   += console c++17
 CONFIG   -= app_bundle
 
 TEMPLATE = app

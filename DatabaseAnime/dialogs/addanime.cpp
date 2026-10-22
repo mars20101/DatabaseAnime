@@ -5,6 +5,7 @@
 
 #include <QFileDialog>
 #include <QDesktopServices>
+#include <QRegularExpression>
 
 #include <QImageReader>
 //#include <QPicture>
@@ -301,7 +302,7 @@ bool DialogAddAnime::insert_Anime(){
     data[isAdult]        = false;
     data[id]             = _recordId;
 
-    QRegExp rx("<.*>"); rx.setMinimal(true);
+    QRegularExpression rx("<.*?>");
     data[Title]          = ui->LineEdit_Title->text().remove(rx);
 
     data[AltTitle]      = (LineEdit_OrigTitle  )?   this->LineEdit_OrigTitle->text() : _altTitle;
@@ -453,9 +454,9 @@ void DialogAddAnime::on_LineEdit_Title_textEdited(const QString &title)
 {
     if( _autoSearchOnShikimori == false )
         return;
-    if( title.count() < 3 )
+    if( title.size() < 3 )
         return;
-    foreach ( QString name, _titleCompliterModel.stringList() ) {
+    for ( const QString &name : _titleCompliterModel.stringList() ) {
         if( name.toUpper().contains( title.toUpper() ) )
             return;
     }

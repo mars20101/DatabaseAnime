@@ -26,9 +26,9 @@ QSet<QString> StyleManager::getExistsStyles()
 
     QStringList paths = DefinesPath::share();
 
-    foreach (QString path, paths) {
+    for (const QString &path : paths) {
         QString styleFolder = QDir(path).path() + QDir::separator() + "Style" + QDir::separator();
-        foreach(QString fileName, QDir(styleFolder).entryList(QStringList() << "*.ini") ){
+        for (QString fileName : QDir(styleFolder).entryList(QStringList() << "*.ini") ){
             fileName.replace(".ini", "");
             styles.insert( fileName );
         }
@@ -40,27 +40,27 @@ QSet<QString> StyleManager::getExistsStyles()
 /*! \~russian
  * \brief Метод для получения пути к первома найденному файлу со стилем.
  * \param styleName - имя стиля, путь к которому нужно найти.
- * \return QString - путь к файлу со стилем. QString::null - если файл не найден.
+ * \return QString - путь к файлу со стилем. null-строка - если файл не найден.
  */
 /*! \~english
  * \brief Method for receiving a way to a pervom to the found file with style.
  * \param styleName - the style name, way to which needs to be found.
- * \return QString - a way to the file with style. QString::null - if the file isn't found.
+ * \return QString - a way to the file with style. Null string - if the file isn't found.
  */
 QString StyleManager::getFilePath(QString styleName)
 {
     QString styleFileName = styleName + ".ini";
     QStringList paths = DefinesPath::share();
 
-    foreach (QString path, paths) {
+    for (const QString &path : paths) {
         QString styleFolder = QDir(path).path() + QDir::separator() + "Style" + QDir::separator();
-        foreach(QString fileName, QDir(styleFolder).entryList(QStringList() << "*.ini") ){
+        for (const QString &fileName : QDir(styleFolder).entryList(QStringList() << "*.ini") ){
             if( styleFileName == fileName )
                 return styleFolder + fileName;
         }
     }
 
-    return QString::null;
+    return QString();
 }
 
 /*! \~russian
@@ -107,7 +107,8 @@ QPalette StyleManager::getPaletteOfStyle(QString styleName)
     palette.setColor(QPalette::ToolTipText,     ToolTipText);
     palette.setColor(QPalette::Text,            Text);
     palette.setColor(QPalette::Button,          Button);
-    palette.setColor(QPalette::ButtonText,      ButtonText);
+    // Qt 6: the ButtonText role was removed, button text now shares the WindowText role,
+    // so the ButtonText palette color cannot be applied separately anymore.
     palette.setColor(QPalette::BrightText,      BrightText);
     palette.setColor(QPalette::Link,            Link);
     palette.setColor(QPalette::Highlight,       Highlight);

@@ -692,7 +692,8 @@ QPalette Settings::paletteFromColorPicker()
     palette.setColor(QPalette::ToolTipText, ui->Frame_Style_ToolTipText->color());
     palette.setColor(QPalette::Text, ui->Frame_Style_Text->color());
     palette.setColor(QPalette::Button, ui->Frame_Style_Button->color());
-    palette.setColor(QPalette::ButtonText, ui->Frame_Style_ButtonText->color());
+    // Qt 6: the ButtonText role was removed, button text now shares the WindowText role,
+    // so the ButtonText palette color cannot be applied separately anymore.
     palette.setColor(QPalette::BrightText, ui->Frame_Style_BrightText->color());
     palette.setColor(QPalette::Link, ui->Frame_Style_Link->color());
     palette.setColor(QPalette::Highlight, ui->Frame_Style_Highlight->color());
@@ -818,7 +819,9 @@ void Settings::loadSettings()
         bool    isSystemStyle = cfg.value( SystemStyle     , true     ).toBool();
 
         QSet<QString> styles = StyleManager::getExistsStyles();
-        ui->ComboBox_CurrentStyle->addItems( styles.toList() );
+        QStringList styleNames( styles.values() );
+        styleNames.sort();
+        ui->ComboBox_CurrentStyle->addItems( styleNames );
 
         if( ( ! isSystemStyle) && styles.contains( styleName ) ){
             ui->ComboBox_CurrentStyle->setCurrentIndex( ui->ComboBox_CurrentStyle->findText( styleName ) );

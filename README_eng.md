@@ -24,7 +24,7 @@ It is my first project on **Qt**, difficult functions can be developed long enou
   - https://aur.archlinux.org/packages/databaseanime/
 
 ### Depends
-- Qt >= 5.3.0
+- Qt >= 6.0.0
 - SQLite >= 3.0
 
 ### Develop

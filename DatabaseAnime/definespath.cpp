@@ -43,9 +43,9 @@ QString DefinesPath::log()
  */
 QStringList DefinesPath::share()
 {
-    QStringList paths = QStandardPaths::standardLocations( QStandardPaths::DataLocation );
+    QStringList paths = QStandardPaths::standardLocations( QStandardPaths::AppDataLocation );
     QStringList newPaths;
-    foreach (QString path, paths) {
+    for (const QString &path : paths) {
         newPaths << path + QDir::separator();
     }
     return newPaths;
@@ -68,10 +68,10 @@ QStringList DefinesPath::share()
 QString DefinesPath::appData(bool useDefault)
 {
     if(useDefault)
-        return QStandardPaths::writableLocation( QStandardPaths::DataLocation ) + QDir::separator();
+        return QStandardPaths::writableLocation( QStandardPaths::AppDataLocation ) + QDir::separator();
     QSettings settings;
     return QDir(settings.value(Options::General::WorkDirectory,
-                   QStandardPaths::writableLocation( QStandardPaths::DataLocation )
+                   QStandardPaths::writableLocation( QStandardPaths::AppDataLocation )
                    ).toString()).path() + QDir::separator();
 
     // Use in:
@@ -112,7 +112,7 @@ QString DefinesPath::dbPath(bool appendFileName)
  */
 QString DefinesPath::styleLocation()
 {
-    return QStandardPaths::writableLocation( QStandardPaths::DataLocation ) + QDir::separator() + "Style" + QDir::separator();
+    return QStandardPaths::writableLocation( QStandardPaths::AppDataLocation ) + QDir::separator() + "Style" + QDir::separator();
 }
 
 /*! \~russian
@@ -140,7 +140,7 @@ QString DefinesPath::getCoversFolder(const sections::section section, const QStr
             return doramaCovers(prefix);
         case sections::none :
         default:
-            return QString::null;
+            return QString();
     }
 }
 
@@ -148,19 +148,19 @@ QString DefinesPath::getCoversFolder(const sections::section section, const QStr
  * \brief Метод для получения пути к директории с файлами обложек аниме
  * \param prefix - использовать как путь
  * \return Путь к директории с обложками аниме
- * Если префикс не QString::null - используется путь(prefix) из параметра
+ * Если префикс не null - используется путь(prefix) из параметра
  * иниче используется appData() как prefix
  */
 /*! \~english
  * \brief Path to anime covers directory
  * \param prefix - use it is as path
  * \return path to anime covers
- * if prefix is not QString::null - used a prefix
+ * if prefix is not null - used a prefix
  * else used a appData() as prefix
  */
 QString DefinesPath::animeCovers(const QString prefix)
 {
-    if(prefix != QString::null)
+    if( ! prefix.isNull() )
         return QDir(prefix).path() + QDir::separator() + "animeCovers" + QDir::separator();
     return appData() + "animeCovers" + QDir::separator();
 }
@@ -169,19 +169,19 @@ QString DefinesPath::animeCovers(const QString prefix)
  * \brief Метод для получения пути к директории с файлами обложек манги
  * \param prefix - использовать как путь
  * \return Путь к директории с обложками манги
- * Если префикс не QString::null - используется путь(prefix) из параметра
+ * Если префикс не null - используется путь(prefix) из параметра
  * иниче используется appData() как prefix
  */
 /*! \~english
  * \brief Path to manga covers directory
  * \param prefix - use it is as path
  * \return path to manga covers
- * if prefix is not QString::null - used a prefix
+ * if prefix is not null - used a prefix
  * else used a appData() as prefix
  */
 QString DefinesPath::mangaCovers(const QString prefix)
 {
-    if(prefix != QString::null)
+    if( ! prefix.isNull() )
         return QDir(prefix).path() + QDir::separator() + "mangaCovers" + QDir::separator();
     return appData() + "mangaCovers" + QDir::separator();
 }
@@ -190,19 +190,19 @@ QString DefinesPath::mangaCovers(const QString prefix)
  * \brief Метод для получения пути к директории с файлами обложек amv
  * \param prefix - использовать как путь
  * \return Путь к директории с обложками amv
- * Если префикс не QString::null - используется путь(prefix) из параметра
+ * Если префикс не null - используется путь(prefix) из параметра
  * иниче используется appData() как prefix
  */
 /*! \~english
  * \brief Path to amv covers directory
  * \param prefix - use it is as path
  * \return path to amv covers
- * if prefix is not QString::null - used a prefix
+ * if prefix is not null - used a prefix
  * else used a appData() as prefix
  */
 QString DefinesPath::amvCovers(const QString prefix)
 {
-    if(prefix != QString::null)
+    if( ! prefix.isNull() )
         return QDir(prefix).path() + QDir::separator() + "amvCovers" + QDir::separator();
     return appData() + "amvCovers" + QDir::separator();
 }
@@ -211,19 +211,19 @@ QString DefinesPath::amvCovers(const QString prefix)
  * \brief Метод для получения пути к директории с файлами обложек дорамы
  * \param prefix - использовать как путь
  * \return Путь к директории с обложками дорамы
- * Если префикс не QString::null - используется путь(prefix) из параметра
+ * Если префикс не null - используется путь(prefix) из параметра
  * иниче используется appData() как prefix
  */
 /*! \~english
  * \brief Path to dorama covers directory
  * \param prefix - use it is as path
  * \return path to dorama covers
- * if prefix is not QString::null - used a prefix
+ * if prefix is not null - used a prefix
  * else used a appData() as prefix
  */
 QString DefinesPath::doramaCovers(const QString prefix)
 {
-    if(prefix != QString::null)
+    if( ! prefix.isNull() )
         return QDir(prefix).path() + QDir::separator() + "doramaCovers" + QDir::separator();
     return appData() + "doramaCovers" + QDir::separator();
 }

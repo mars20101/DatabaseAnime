@@ -80,7 +80,7 @@ ShikimoriApi::TitleLists ShikimoriApi::jsonParse_search(QByteArray data)
 
     TitleLists lists;
 
-    foreach(QJsonValue val, arr){
+    for (const QJsonValue &val : arr){
         QJsonObject obj = val.toObject();
         lists.eng.append( obj["name"].toString() );
         if( obj["russian"].toString().isEmpty() == false )

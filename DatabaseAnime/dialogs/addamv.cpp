@@ -5,6 +5,7 @@
 
 #include <QFileDialog>
 #include <QDesktopServices>
+#include <QRegularExpression>
 
 #include <QMessageBox>
 #include <QDebug>
@@ -124,7 +125,7 @@ bool DialogAddAmv::insert_Amv(){
     data[isEditingDone] = !ui->CheckBox_Editing->isChecked();
     data[isAdult]       =  false;
 
-    QRegExp rx("<.*>"); rx.setMinimal(true);
+    QRegularExpression rx("<.*?>");
     data[Title]          = ui->LineEdit_Title->text().remove(rx);
 
     data[Author]        =  ui->LineEdit_Author->text();

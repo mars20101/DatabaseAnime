@@ -11,7 +11,7 @@
 void LookProgressBar::wheelEvent(QWheelEvent *e)
 {
     int value = getValue();
-    if( e->delta() > 0 ){
+    if( e->angleDelta().y() > 0 ){
         if( value >= getMaximum() )
             return;
         setValue( value + 1 );
@@ -35,7 +35,7 @@ void LookProgressBar::initCreate()
     _hLay->addWidget(_btnSub);
     _hLay->addWidget(_btnAdd);
     _hLay->addWidget(_lookProgressBar);
-    _hLay->setMargin(0);
+    _hLay->setContentsMargins(0, 0, 0, 0);
     _hLay->setSpacing(3);
 
     _btnSub->setIcon( QIcon("://images/list-remove.png") );
@@ -78,7 +78,7 @@ LookProgressBar::LookProgressBar(QWidget *parent)
     _lookProgressBar->setMaximum( 100 );
     _lookProgressBar->setValue( 0 );
     _lookProgressBar->setFormat( "[%v/%m]" );
-    _targetFieldDB = QString::null;
+    _targetFieldDB = QString();
 }
 
 LookProgressBar::LookProgressBar(int minimum, int value, int maximum, QWidget *parent)
@@ -92,7 +92,7 @@ LookProgressBar::LookProgressBar(int minimum, int value, int maximum, QWidget *p
     _lookProgressBar->setMaximum( maximum );
     _lookProgressBar->setValue( value );
     _lookProgressBar->setFormat( "[%v/%m]" );
-    _targetFieldDB = QString::null;
+    _targetFieldDB = QString();
 }
 
 LookProgressBar::LookProgressBar(int minimum, int value, int maximum, QString format, QString targetField, QWidget *parent)

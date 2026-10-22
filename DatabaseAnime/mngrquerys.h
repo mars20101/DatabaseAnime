@@ -135,7 +135,7 @@ public:
     static bool selectSection(QSqlQueryModel *model, sections::section section,
                               Tables::UniformField::field field,
                               Filter::filter filter = Filter::all,
-                              Sort::sort sort = Sort::none, QString search = QString::null);
+                              Sort::sort sort = Sort::none, QString search = QString());
 
     static bool createTable_Anime();
     static bool createTable_Manga();

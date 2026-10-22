@@ -11,7 +11,7 @@
 
 #include <QDesktopServices>
 #include <QScrollArea>
-#include <QDirModel>
+#include <QFileSystemModel>
 #include <QDir>
 
 #include <QMessageBox>
@@ -36,8 +36,8 @@ MainWindow::MainWindow(QWidget *parent) :
     if( language == 0 ){
         language = QLocale::system().language();
     }
-    qtTr.load( DbaLocalization::getQtBaseFileOfLocalization( language, DefinesPath::share() ) );
-    dbaTr.load( DbaLocalization::getFileOfLocalization( language, DefinesPath::share() ) );
+    (void)qtTr.load( DbaLocalization::getQtBaseFileOfLocalization( language, DefinesPath::share() ) );
+    (void)dbaTr.load( DbaLocalization::getFileOfLocalization( language, DefinesPath::share() ) );
     qApp->installTranslator(&qtTr);
     qApp->installTranslator(&dbaTr);
     ui->setupUi(this);
@@ -156,8 +156,8 @@ void MainWindow::on_PButton_Options_clicked()
     QLocale::Language language = formSettings.getLanguage();
     if( language == 0 )
         language = QLocale::system().language();
-    qtTr.load( DbaLocalization::getQtBaseFileOfLocalization( language, DefinesPath::share() ) );
-    dbaTr.load( DbaLocalization::getFileOfLocalization( language, DefinesPath::share() ) );
+    (void)qtTr.load( DbaLocalization::getQtBaseFileOfLocalization( language, DefinesPath::share() ) );
+    (void)dbaTr.load( DbaLocalization::getFileOfLocalization( language, DefinesPath::share() ) );
     ui->retranslateUi(this);
 
     _sort = formSettings.getSort();
@@ -242,7 +242,7 @@ void MainWindow::on_TButton_Delete_clicked()
         }
 
         QString coverFolder = DefinesPath::getCoversFolder(_activeTable);
-        if( coverFolder == QString::null )
+        if( coverFolder.isNull() )
             return;
 
         QString coverPath( coverFolder + MngrQuerys::getImagePath(_activeTable, _currentItemId) );
@@ -595,12 +595,12 @@ void MainWindow::selectAnimeData()
         ui->StackWgt_CoverOrDir->setDisabledSwitch( false );
     else
         ui->StackWgt_CoverOrDir->setDisabledSwitch( true );
-    QDirModel *dirModel = new QDirModel( _ScrArea_propertyes );
+    QFileSystemModel *dirModel = new QFileSystemModel( _ScrArea_propertyes );
 //    dirModel->setNameFilters( QStringList() << "*ona*" << "*ova*" << "*special*" << "*tv*" );
-    dirModel->setSorting( QDir::DirsFirst | QDir::Type | QDir::Name );
+    dirModel->setFilter( QDir::AllEntries | QDir::NoDotAndDotDot );
 
     ui->TreeView_Dir->setModel( dirModel );
-    ui->TreeView_Dir->setRootIndex( dirModel->index(_currentItemDir) );
+    ui->TreeView_Dir->setRootIndex( dirModel->index( QDir(_currentItemDir).path() ) );
     ui->TreeView_Dir->setColumnHidden(1, true);
     ui->TreeView_Dir->setColumnHidden(2, true);
     ui->TreeView_Dir->setColumnHidden(3, true);
@@ -711,12 +711,12 @@ void MainWindow::selectMangaData()
         ui->StackWgt_CoverOrDir->setDisabledSwitch( false );
     else
         ui->StackWgt_CoverOrDir->setDisabledSwitch( true );
-    QDirModel *dirModel = new QDirModel(_ScrArea_propertyes);
+    QFileSystemModel *dirModel = new QFileSystemModel(_ScrArea_propertyes);
 //    dirModel->setNameFilters( QStringList() << "*ona*" << "*ova*" << "*special*" << "*tv*" );
-    dirModel->setSorting( QDir::DirsFirst | QDir::Type | QDir::Name );
+    dirModel->setFilter( QDir::AllEntries | QDir::NoDotAndDotDot );
 
     ui->TreeView_Dir->setModel( dirModel );
-    ui->TreeView_Dir->setRootIndex( dirModel->index(_currentItemDir) );
+    ui->TreeView_Dir->setRootIndex( dirModel->index( QDir(_currentItemDir).path() ) );
     ui->TreeView_Dir->setColumnHidden(1, true);
     ui->TreeView_Dir->setColumnHidden(2, true);
     ui->TreeView_Dir->setColumnHidden(3, true);
@@ -929,12 +929,12 @@ void MainWindow::selectDoramaData()
         ui->StackWgt_CoverOrDir->setDisabledSwitch( false );
     else
         ui->StackWgt_CoverOrDir->setDisabledSwitch( true );
-    QDirModel *dirModel = new QDirModel(_ScrArea_propertyes);
+    QFileSystemModel *dirModel = new QFileSystemModel(_ScrArea_propertyes);
 //    dirModel->setNameFilters( QStringList() << "*ona*" << "*ova*" << "*special*" << "*tv*" );
-    dirModel->setSorting( QDir::DirsFirst | QDir::Type | QDir::Name );
+    dirModel->setFilter( QDir::AllEntries | QDir::NoDotAndDotDot );
 
     ui->TreeView_Dir->setModel( dirModel );
-    ui->TreeView_Dir->setRootIndex( dirModel->index(_currentItemDir) );
+    ui->TreeView_Dir->setRootIndex( dirModel->index( QDir(_currentItemDir).path() ) );
     ui->TreeView_Dir->setColumnHidden(1, true);
     ui->TreeView_Dir->setColumnHidden(2, true);
     ui->TreeView_Dir->setColumnHidden(3, true);
@@ -1015,10 +1015,8 @@ void MainWindow::on_CB_Filter_currentIndexChanged(int = 0)
 
 void MainWindow::on_TreeView_Dir_activated(const QModelIndex &index)
 {
-    QDirModel *m = (QDirModel*)index.model();
-    QDesktopServices::openUrl( QUrl::fromLocalFile( m->fileInfo(index).absolutePath()
-                                                    + QDir::separator() + index.data().toString()
-                                                    )  );
+    QFileSystemModel *m = (QFileSystemModel*)index.model();
+    QDesktopServices::openUrl( QUrl::fromLocalFile( m->filePath(index) ) );
 }
 
 void MainWindow::on_PBtn_url_vk_clicked()

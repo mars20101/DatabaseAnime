@@ -5,6 +5,7 @@
 
 #include <QFileDialog>
 #include <QDesktopServices>
+#include <QRegularExpression>
 
 #include <QImageReader>
 //#include <QPicture>
@@ -282,7 +283,7 @@ bool DialogAddManga::insert_Manga(){
     data[isEditingDone] = !ui->CheckBox_Editing->isChecked();
     data[id]            = _recordId;
 
-    QRegExp rx("<.*>"); rx.setMinimal(true);
+    QRegularExpression rx("<.*?>");
     data[Title]          = ui->LineEdit_Title->text().remove(rx);
 
     data[AltTitle]      = (LineEdit_AltTitle   ) ?    LineEdit_AltTitle->text() : _altTitle;
@@ -415,9 +416,9 @@ void DialogAddManga::on_LineEdit_Title_textEdited(const QString &title)
 {
     if( _autoSearchOnShikimori == false )
         return;
-    if( title.count() < 3 )
+    if( title.size() < 3 )
         return;
-    foreach ( QString name, _titleCompliterModel.stringList() ) {
+    for ( const QString &name : _titleCompliterModel.stringList() ) {
         if( name.toUpper().contains( title.toUpper() ) )
             return;
     }

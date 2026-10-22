@@ -7,7 +7,7 @@
  * \param filePrefix - префикс имени файла 'DatabaseAnime_'ru.qm
  * \param lang - требуемый язык
  * \param paths - пути для поиска файлов
- * \return строка, абсолютный путь к файлу локализации или QString::null если локализация не найдена
+ * \return строка, абсолютный путь к файлу локализации или null-строку если локализация не найдена
  *
  * Метод позволяет получить абсолютный путь к первому попавшемуся, соответствующиму файлу локализации.
  */
@@ -16,7 +16,7 @@
  * \param filePrefix - file name prefix 'DatabaseAnime_'ru.qm
  * \param lang - the required language
  * \param paths - for search of files
- * \return line, absolute path to the file of localization or QString:: null if localization isn't found
+ * \return line, absolute path to the file of localization or null string if localization isn't found
  *
  * The method allows to receive an absolute path to the first, appropriate file of localization.
  */
@@ -24,12 +24,12 @@ QString DbaLocalization::getPathToLocalizationFile(QString filePrefix, QLocale::
 {
     if( paths.isEmpty() ){
         qCritical() << "Empty paths to localization";
-        return QString::null;
+        return QString();
     }
 
-    foreach (QString path, paths) {
+    for (const QString &path : paths) {
         QString l10n = QDir(path).path() + QDir::separator() + "l10n" + QDir::separator();
-        foreach(QString fileName, QDir(l10n).entryList( QStringList(filePrefix+"*")) ){
+        for (QString fileName : QDir(l10n).entryList( QStringList(filePrefix+"*")) ){
             QString fullFileName = fileName;
             fileName.replace(filePrefix+"_", "").replace(".qm", "");
             QLocale::Language language = QLocale(fileName).language();
@@ -40,7 +40,7 @@ QString DbaLocalization::getPathToLocalizationFile(QString filePrefix, QLocale::
     }
 
     qWarning() << filePrefix + " localization " + QLocale::languageToString(lang) + " not found";
-    return QString::null;
+    return QString();
 }
 
 /*! \~russian
@@ -61,9 +61,9 @@ QMap<QLocale::Language,QString> DbaLocalization::readExistsLocalizations(QString
         return localizationList;
     }
 
-    foreach (QString path, paths) {
+    for (const QString &path : paths) {
         QString l10n = QDir(path).path() + QDir::separator() + "l10n" + QDir::separator();
-        foreach(QString fileName, QDir(l10n).entryList( QStringList("DatabaseAnime*")) ){
+        for (QString fileName : QDir(l10n).entryList( QStringList("DatabaseAnime*")) ){
             fileName.replace("DatabaseAnime_", "").replace(".qm", "");
             QLocale::Language language = QLocale(fileName).language();
             localizationList.insert(language, QLocale::languageToString( language ) );
@@ -98,10 +98,10 @@ QString DbaLocalization::getFileOfLocalization(QLocale::Language lang, QStringLi
  * \brief Интерфейс для метода получения файла локализации.
  * \param lang - требуемый язык.
  * \param paths - список директорий для поиска файлов локализации.
- * \return строка - абсолютный путь к файлу локализации или QString::null
+ * \return строка - абсолютный путь к файлу локализации или null-строку
  *
  * Вызывает метод получения пути к файлу локализации с префиксом - "qtbase"
- * Возвращает QString::null если запрашивается локализация QLocale::English
+ * Возвращает null-строку если запрашивается локализация QLocale::English
  * в связи с тем что данная локализация вшита по умолчинию.
  */
 /*! \~english
@@ -111,13 +111,13 @@ QString DbaLocalization::getFileOfLocalization(QLocale::Language lang, QStringLi
  * \return string - an absolute path to the file of localization.
  *
  * Calls a method of receiving a way to the file of localization with a prefix - "qtbase"
- * Returns QString:: null if is requested localization of QLocale:: English
+ * Returns null string if is requested localization of QLocale:: English
  * because this localization is sewed on an default.
  */
 QString DbaLocalization::getQtBaseFileOfLocalization(QLocale::Language lang, QStringList paths)
 {
     if( lang == QLocale::English )
-        return QString::null;
+        return QString();
 
     return getPathToLocalizationFile("qtbase", lang, paths);
 }
