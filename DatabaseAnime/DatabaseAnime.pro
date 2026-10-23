@@ -31,6 +31,7 @@ HEADERS += \
     widgets/imagecover.h \
     widgets/tags.h \
     widgets/lookprogressbar.h \
+    widgets/scrollcontent.h \
     widgets/stackwgt_mousehideover.h \
     definespath.h \
     globalenum.h \

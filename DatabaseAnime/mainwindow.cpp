@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "widgets/lookprogressbar.h"
+#include "widgets/scrollcontent.h"
 #include "definespath.h"
 #include "dbalocalization.h"
 
@@ -528,7 +529,7 @@ void MainWindow::selectAnimeData()
     QWidget *Wgt_propertyes = new QWidget;
     QFormLayout *FLay_propertyes = new QFormLayout( Wgt_propertyes );
     _ScrArea_propertyes->setWidget( Wgt_propertyes );
-    _ScrArea_propertyes->setWidgetResizable( true );
+    ScrollContentSizer *contentSizer = new ScrollContentSizer( _ScrArea_propertyes );
     ui->VLay_AnimeDescrFull->addWidget(_ScrArea_propertyes);
 
     // Title
@@ -584,6 +585,8 @@ void MainWindow::selectAnimeData()
         FLay_propertyes->addRow(lblTitle);
         FLay_propertyes->addRow(lblValue);
     }
+
+    contentSizer->sizeContent();
 
     QPixmap pic( DefinesPath::animeCovers() + record.value("ImagePath").toString() );
     if( pic.isNull() ){
@@ -656,7 +659,7 @@ void MainWindow::selectMangaData()
     QWidget *Wgt_propertyes = new QWidget;
     QFormLayout *FLay_propertyes = new QFormLayout( Wgt_propertyes );
     _ScrArea_propertyes->setWidget( Wgt_propertyes );
-    _ScrArea_propertyes->setWidgetResizable( true );
+    ScrollContentSizer *contentSizer = new ScrollContentSizer( _ScrArea_propertyes );
     ui->VLay_AnimeDescrFull->addWidget(_ScrArea_propertyes);
 
     // Title
@@ -703,6 +706,8 @@ void MainWindow::selectMangaData()
         FLay_propertyes->addRow(lblValue);
     }
 
+    contentSizer->sizeContent();
+
     QPixmap pic( DefinesPath::mangaCovers() + record.value("ImagePath").toString() );
     if( pic.isNull() ){
         pic.load( "://images/NoImage.png" );
@@ -739,7 +744,7 @@ void MainWindow::selectAmvData()
     QWidget *Wgt_propertyes = new QWidget;
     QFormLayout *FLay_propertyes = new QFormLayout( Wgt_propertyes );
     _ScrArea_propertyes->setWidget( Wgt_propertyes );
-    _ScrArea_propertyes->setWidgetResizable( true );
+    ScrollContentSizer *contentSizer = new ScrollContentSizer( _ScrArea_propertyes );
     _ScrArea_propertyes->setSizeAdjustPolicy(QAbstractScrollArea::AdjustToContents);
     ui->VLay_AnimeDescrFull->addWidget(_ScrArea_propertyes);
 
@@ -797,6 +802,8 @@ void MainWindow::selectAmvData()
         FLay_propertyes->addRow(lblTitle);
         FLay_propertyes->addRow(lblValue);
     }
+
+    contentSizer->sizeContent();
 
     QPixmap pic( DefinesPath::amvCovers() + record.value("ImagePath").toString());
     if( pic.isNull() ){
@@ -866,7 +873,7 @@ void MainWindow::selectDoramaData()
     QWidget *Wgt_propertyes = new QWidget;
     QFormLayout *FLay_propertyes = new QFormLayout( Wgt_propertyes );
     _ScrArea_propertyes->setWidget( Wgt_propertyes );
-    _ScrArea_propertyes->setWidgetResizable( true );
+    ScrollContentSizer *contentSizer = new ScrollContentSizer( _ScrArea_propertyes );
     ui->VLay_AnimeDescrFull->addWidget(_ScrArea_propertyes);
 
     // Title
@@ -924,6 +931,8 @@ void MainWindow::selectDoramaData()
         FLay_propertyes->addRow(lblTitle);
         FLay_propertyes->addRow(lblValue);
     }
+
+    contentSizer->sizeContent();
 
     QPixmap pic( DefinesPath::doramaCovers() + record.value("ImagePath").toString() );
     if( pic.isNull() ){

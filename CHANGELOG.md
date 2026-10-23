@@ -17,3 +17,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   widget inside the scroll area (`setWidget`/`setWidgetResizable`) instead of laying out the
   scroll area viewport directly, so long wrapped texts (genres, studio, alt title, description)
   no longer get squeezed and overlap when the panel is shorter than the content
+- Fixed vertical clipping of wrapped genres/description in the record information panel: the
+  content widget is now sized manually via `ScrollContentSizer` (viewport width plus enforced
+  `heightForWidth()` of every wrapped label), because `QFormLayout` stops consulting
+  `heightForWidth()` once wrapped labels expand, so rows kept heights computed for hint widths
+  and cut off text at narrower window sizes; the content also never exceeds the viewport width,
+  so no horizontal scrollbar appears, and the vertical scrollbar reaches the full description
