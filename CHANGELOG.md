@@ -27,3 +27,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   their values in the record information panel: each word-wrapped value label is pinned to
   exactly the height its text needs, and the caption of the same row is made equally tall,
   so both texts share one vertical center line at any window size
+- Fixed settings dialog leaving wide empty bands above and below its regions when the window
+  is enlarged: the category list had a `Maximum` vertical size policy, and `QSplitter` caps
+  its own maximum height by the children's maximums, so the whole splitter stayed pinned to
+  the size hints and could not grow with the window; the list now has a `Preferred` vertical
+  policy, so the category list and the settings area stretch to the full window height while
+  the list keeps its fixed maximum width and the page layouts stay untouched
