@@ -2,6 +2,7 @@
 #define SCROLLCONTENT_H
 
 #include <QEvent>
+#include <QFormLayout>
 #include <QObject>
 #include <QScrollArea>
 #include <QLayout>
@@ -21,7 +22,11 @@
    assigned to the items, so every row is as tall as it needs to be and
    nothing is cut off. Word-wrapped labels are also switched to an
    expanding horizontal policy, otherwise QFormLayout keeps their column
-   at the width of the longest word no matter how much room there is. */
+   at the width of the longest word no matter how much room there is.
+   Each word-wrapped label finally gets exactly the height its text
+   needs, and the caption of the same row is made equally tall: QLabel
+   centers its text vertically, so both texts then share one center
+   line instead of drifting apart. */
 class ScrollContentSizer : public QObject
 {
 public:
@@ -42,7 +47,11 @@ public:
 
         for( QObject *child : content->children() ){
             QLabel *label = qobject_cast<QLabel*>( child );
-            if( label && label->wordWrap()
+            if( ! label )
+                continue;
+            label->setMinimumHeight( 0 );
+            label->setMaximumHeight( QWIDGETSIZE_MAX );
+            if( label->wordWrap()
                     && label->sizePolicy().horizontalPolicy() != QSizePolicy::Expanding )
                 label->setSizePolicy( QSizePolicy::Expanding,
                                       label->sizePolicy().verticalPolicy() );
@@ -82,15 +91,32 @@ public:
         // QFormLayout only consults heightForWidth() when the whole layout
         // reports hasHeightForWidth(); otherwise rows keep the heights that
         // were computed for the hint widths and labels placed in narrower
-        // columns get clipped vertically. Enforce the needed height per
-        // word-wrapped label at the width it actually got.
+        // columns get clipped vertically. Pin every word-wrapped label to
+        // exactly the height its text needs at the width it actually got.
         for( QObject *child : content->children() ){
             QLabel *label = qobject_cast<QLabel*>( child );
             if( ! label || ! label->wordWrap() )
                 continue;
-            label->setMinimumHeight( label->heightForWidth( label->width() ) );
+            label->setFixedHeight( label->heightForWidth( label->width() ) );
         }
         lay->activate();
+
+        // QFormLayout sizes each caption label independently of its field,
+        // and QLabel centers text within its own height, so captions drift
+        // away from the vertical center of their values. Give every caption
+        // the height of its field so both texts share one center line.
+        if( QFormLayout *form = qobject_cast<QFormLayout*>( lay ) ){
+            for( int row = 0; row < form->rowCount(); ++row ){
+                QLayoutItem *capItem = form->itemAt( row, QFormLayout::LabelRole );
+                QLayoutItem *fldItem = form->itemAt( row, QFormLayout::FieldRole );
+                QLabel *cap = ( capItem ) ? qobject_cast<QLabel*>( capItem->widget() ) : nullptr;
+                QLabel *fld = ( fldItem ) ? qobject_cast<QLabel*>( fldItem->widget() ) : nullptr;
+                if( cap && fld && ! cap->wordWrap() && fld->wordWrap()
+                        && fld->height() != cap->height() )
+                    cap->setFixedHeight( fld->height() );
+            }
+            lay->activate();
+        }
 
         // Read the heights the layout actually assigned and grow the content
         // widget to fit them all, so the scroll area can reach the rest.

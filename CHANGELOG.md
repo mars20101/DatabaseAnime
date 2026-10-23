@@ -23,3 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   `heightForWidth()` once wrapped labels expand, so rows kept heights computed for hint widths
   and cut off text at narrower window sizes; the content also never exceeds the viewport width,
   so no horizontal scrollbar appears, and the vertical scrollbar reaches the full description
+- Fixed captions ("Ganres:", "Alt title:", etc.) drifting away from the vertical center of
+  their values in the record information panel: each word-wrapped value label is pinned to
+  exactly the height its text needs, and the caption of the same row is made equally tall,
+  so both texts share one vertical center line at any window size
