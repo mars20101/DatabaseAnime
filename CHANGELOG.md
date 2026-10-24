@@ -38,3 +38,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   and the update revived 375 finished translations (ru) that `lrelease` had produced nothing
   for; 29 new strings (settings color-role labels, shortcut captions, Shikimori URL options,
   progress-bar switches) remain untranslated, and dead strings are kept as `vanished`
+- Fixed splitter handle in the main window showing as a wide bright bar under Breeze for Qt6:
+  breeze-qt6 fills the whole handle with the palette separator color (`CE_Splitter` →
+  `drawSplitterControl`), while breeze-qt5 did not implement `CE_Splitter` at all and left an
+  invisible gap; the main-window splitter now overrides handle painting via a widget-level
+  stylesheet (`QSplitter::handle { border: none; background: palette(window); }`), restoring the
+  old invisible look; the handle width and dragging behavior are unchanged

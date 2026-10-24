@@ -75,6 +75,11 @@ MainWindow::MainWindow(QWidget *parent) :
     this->restoreState( settings.value(Options::Dialogs::MainWindow::State).toByteArray() );
     ui->splitter->restoreGeometry( settings.value(Options::Dialogs::MainWindow::Splitter::Geometry).toByteArray() );
     ui->splitter->restoreState( settings.value(Options::Dialogs::MainWindow::Splitter::State).toByteArray() );
+
+    // Breeze for Qt6 fills the whole splitter handle with the separator color (CE_Splitter ->
+    // drawSplitterControl), while breeze for Qt5 drew nothing and left an invisible gap.
+    // Restore the old look: paint the handle in the window color.
+    ui->splitter->setStyleSheet( QStringLiteral( "QSplitter::handle { border: none; background: palette(window); }" ) );
     _sort = static_cast<Sort::sort>( settings.value(Options::General::SORTING, Sort::asc).toInt() );
     bool c1 = settings.value( Options::General::SwitchCoverOrDir, true ).toBool();
     ui->StackWgt_CoverOrDir->setOptSwitch( c1 );
