@@ -44,6 +44,23 @@ Settings::Settings(MngrConnection &MngrCon, QWidget *parent) :
     ui->ProgressBar_Export->setVisible(false);
     ui->ProgressBar_Import->setVisible(false);
 
+    // Breeze for Qt6 draws QGroupBox titles horizontally centered *inside* the frame
+    // (drawGroupBoxComplexControl copies QCommonStyle and hardcodes Qt::AlignHCenter),
+    // while breeze for Qt5 placed the title left-aligned above the frame.
+    // Restore the old look; the frame itself is still painted by Breeze (native color/corners).
+    setStyleSheet( QStringLiteral(
+        "QGroupBox {"
+        " margin-top: 22px;"
+        " padding-top: 2px;"
+        " }"
+        "QGroupBox::title {"
+        " subcontrol-origin: margin;"
+        " subcontrol-position: top left;"
+        " padding: 0;"
+        " left: 0px;"
+        " font-weight: bold;"
+        " }" ) );
+
     QSettings settings;
     this->restoreGeometry( settings.value(Options::Dialogs::Config::Geometry).toByteArray() );
     ui->splitter->restoreGeometry( settings.value(Options::Dialogs::Config::Splitter::Geometry).toByteArray() );

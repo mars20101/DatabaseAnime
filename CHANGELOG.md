@@ -44,3 +44,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   invisible gap; the main-window splitter now overrides handle painting via a widget-level
   stylesheet (`QSplitter::handle { border: none; background: palette(window); }`), restoring the
   old invisible look; the handle width and dragging behavior are unchanged
+- Fixed settings dialog group box headers ("Anime:", "Global:", etc.) showing horizontally
+  centered *inside* their frames under Breeze for Qt6: breeze-qt6 rewrote
+  `drawGroupBoxComplexControl` after `QCommonStyle` and hardcodes `Qt::AlignHCenter` for the
+  title, while breeze-qt5 delegated title drawing to `QCommonStyle` (left-aligned) and shifted
+  the frame below it; the dialog now sets a dialog-level stylesheet that moves the title
+  subcontrol into the top-left margin (`subcontrol-origin: margin`,
+  `subcontrol-position: top left`), so headers sit left-aligned above the frame again, while
+  the frame itself is still painted by Breeze and keeps its native separator color and
+  rounded corners
