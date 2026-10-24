@@ -3,6 +3,7 @@
 #include "ui_settings.h"
 
 #include <QColorDialog>
+#include <QFormLayout>
 #include <QInputDialog>
 #include <QStyleFactory>
 
@@ -60,6 +61,13 @@ Settings::Settings(MngrConnection &MngrCon, QWidget *parent) :
         " left: 0px;"
         " font-weight: bold;"
         " }" ) );
+
+    // By default QFormLayout right-aligns labels (SH_FormLayoutLabelAlignment = AlignRight),
+    // so label-only rows are indented while fields start at the left edge of the group.
+    // Align labels to the left so they line up with the fields.
+    const QList<QFormLayout *> formLayouts = findChildren<QFormLayout *>();
+    for (QFormLayout *FLay : formLayouts)
+        FLay->setLabelAlignment( Qt::AlignLeft );
 
     QSettings settings;
     this->restoreGeometry( settings.value(Options::Dialogs::Config::Geometry).toByteArray() );

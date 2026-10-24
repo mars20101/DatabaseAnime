@@ -53,3 +53,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   `subcontrol-position: top left`), so headers sit left-aligned above the frame again, while
   the frame itself is still painted by Breeze and keeps its native separator color and
   rounded corners
+- Fixed labels without a field ("Genre (anime):", "User tags", ...) being indented away from
+  the left edge of their group in the settings dialog, while the fields in the rows above
+  started at that edge: `QFormLayout` right-aligns its label column by default
+  (`SH_FormLayoutLabelAlignment`), which is only noticeable in rows that have no field, so
+  every `QFormLayout` of the dialog now gets `setLabelAlignment(Qt::AlignLeft)`; label
+  alignment cannot be set through Qt Style Sheets (`QFormLayout:labelfield` is ignored by Qt),
+  hence the code, and the field column keeps its width and positions
