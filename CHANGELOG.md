@@ -33,3 +33,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   the size hints and could not grow with the window; the list now has a `Preferred` vertical
   policy, so the category list and the settings area stretch to the full window height while
   the list keeps its fixed maximum width and the page layouts stay untouched
+- Regenerated translation sources (`DatabaseAnime_ru.ts`, `DatabaseAnime_en.ts`) with Qt 6
+  `lupdate`: the catalogs had been fully `vanished` since the pre-Qt6 project reorganization,
+  and the update revived 375 finished translations (ru) that `lrelease` had produced nothing
+  for; 29 new strings (settings color-role labels, shortcut captions, Shikimori URL options,
+  progress-bar switches) remain untranslated, and dead strings are kept as `vanished`

@@ -4,501 +4,686 @@
 <context>
     <name>DialogAddAmv</name>
     <message>
+        <location filename="addamv.ui" line="14"/>
         <source>Add AMV</source>
-        <translation type="vanished">Adding of AMV</translation>
+        <translation>Adding of AMV</translation>
     </message>
     <message>
+        <location filename="addamv.ui" line="42"/>
         <source>AMV</source>
-        <translation type="vanished">AMV</translation>
+        <translation>AMV</translation>
     </message>
     <message>
+        <location filename="addamv.ui" line="62"/>
         <source>If you didn&apos;t finish editing - deliver a checkbox for display it in the special filter</source>
-        <translation type="vanished">If you didn&apos;t finish editing - deliver a checkbox for display it in the special filter</translation>
+        <translation>If you didn&apos;t finish editing - deliver a checkbox for display it in the special filter</translation>
     </message>
     <message>
+        <location filename="addamv.ui" line="65"/>
         <source>Editing</source>
-        <translation type="vanished">Editing</translation>
+        <translation>Editing</translation>
     </message>
     <message>
+        <location filename="addamv.ui" line="85"/>
         <source>Title</source>
-        <translation type="vanished">Title</translation>
+        <translation>Title</translation>
     </message>
     <message>
+        <location filename="addamv.ui" line="92"/>
         <source>If this checkbox isn&apos;t active - year won&apos;t be displayed</source>
-        <translation type="vanished">If this checkbox isn&apos;t active - year won&apos;t be displayed</translation>
+        <translation>If this checkbox isn&apos;t active - year won&apos;t be displayed</translation>
     </message>
     <message>
+        <location filename="addamv.ui" line="95"/>
         <source>Year:</source>
-        <translation type="vanished">Year:</translation>
+        <translation>Year:</translation>
     </message>
     <message>
+        <location filename="addamv.ui" line="102"/>
         <source>You can use a mouse wheel for value change</source>
-        <translation type="vanished">You can use a mouse wheel for value change</translation>
+        <translation>You can use a mouse wheel for value change</translation>
     </message>
     <message>
+        <location filename="addamv.ui" line="128"/>
         <source>Author</source>
-        <translation type="vanished">Author</translation>
+        <translation>Author</translation>
     </message>
     <message>
+        <location filename="addamv.ui" line="138"/>
         <source>Сontestant</source>
-        <translation type="vanished">Contestant</translation>
+        <translation>Contestant</translation>
     </message>
     <message>
+        <location filename="addamv.ui" line="150"/>
         <source>You can use a mouse wheel for switching on tabs</source>
-        <translation type="vanished">You can use a mouse wheel for switching on tabs</translation>
+        <translation>You can use a mouse wheel for switching on tabs</translation>
     </message>
     <message>
+        <location filename="addamv.ui" line="166"/>
         <source>Tags</source>
-        <translation type="vanished">Tags</translation>
+        <translation>Tags</translation>
     </message>
     <message>
+        <location filename="addamv.ui" line="172"/>
         <source>Separator: comma</source>
-        <translation type="vanished">Separator: comma</translation>
+        <translation>Separator: comma</translation>
     </message>
     <message>
+        <location filename="addamv.ui" line="184"/>
         <source>Enter through a comma, or choose from the list lower</source>
-        <translation type="vanished">Enter through a comma, or choose from the list lower</translation>
+        <translation>Enter through a comma, or choose from the list lower</translation>
     </message>
     <message>
+        <location filename="addamv.ui" line="208"/>
+        <location filename="addamv.ui" line="214"/>
         <source>Video source</source>
-        <translation type="vanished">Video source</translation>
+        <translation>Video source</translation>
     </message>
     <message>
+        <location filename="addamv.ui" line="222"/>
+        <location filename="addamv.ui" line="228"/>
         <source>Containing music</source>
-        <translation type="vanished">Containing music</translation>
+        <translation>Containing music</translation>
     </message>
     <message>
+        <location filename="addamv.ui" line="236"/>
+        <location filename="addamv.ui" line="242"/>
         <source>Author comment</source>
-        <translation type="vanished">Author comment</translation>
+        <translation>Author comment</translation>
     </message>
     <message>
+        <location filename="addamv.ui" line="250"/>
         <source>Media</source>
-        <translation type="vanished">Media</translation>
+        <translation>Media</translation>
     </message>
     <message>
+        <location filename="addamv.ui" line="264"/>
         <source>File</source>
-        <translation type="vanished">File</translation>
+        <translation>File</translation>
     </message>
     <message>
+        <location filename="addamv.ui" line="277"/>
+        <source>*</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="addamv.ui" line="299"/>
         <source>URL</source>
-        <translation type="vanished">URL</translation>
+        <translation>URL</translation>
     </message>
     <message>
+        <location filename="addamv.ui" line="352"/>
         <source>Drop image here, or a double click for a file choice</source>
-        <translation type="vanished">Drop image here, or a double click for a file choice</translation>
+        <translation>Drop image here, or a double click for a file choice</translation>
     </message>
     <message>
+        <location filename="dialogs/addamv.cpp" line="57"/>
         <source>Editing AMV</source>
-        <translation type="vanished">Editing AMV</translation>
+        <translation>Editing AMV</translation>
     </message>
     <message>
+        <location filename="dialogs/addamv.cpp" line="159"/>
+        <location filename="dialogs/addamv.cpp" line="164"/>
         <source>Critical</source>
-        <translation type="vanished">Critical error</translation>
+        <translation>Critical error</translation>
     </message>
     <message>
+        <location filename="dialogs/addamv.cpp" line="159"/>
         <source>Cannot insert data.</source>
-        <translation type="vanished">Cannot insert data.</translation>
+        <translation>Cannot insert data.</translation>
     </message>
     <message>
+        <location filename="dialogs/addamv.cpp" line="164"/>
         <source>Cannot update data.</source>
-        <translation type="vanished">Cannot update data.</translation>
+        <translation>Cannot update data.</translation>
     </message>
     <message>
+        <location filename="dialogs/addamv.cpp" line="175"/>
+        <location filename="dialogs/addamv.cpp" line="182"/>
         <source>Warning</source>
-        <translation type="vanished">Warning</translation>
+        <translation>Warning</translation>
     </message>
     <message>
+        <location filename="dialogs/addamv.cpp" line="175"/>
         <source>The field &apos;File&apos; is uncorrect</source>
-        <translation type="vanished">The field &apos;File&apos; is uncorrect</translation>
+        <translation>The field &apos;File&apos; is uncorrect</translation>
     </message>
     <message>
+        <location filename="dialogs/addamv.cpp" line="182"/>
         <source>The field &apos;Title&apos; is not filled</source>
-        <translation type="vanished">The field &apos;Title&apos; is not filled</translation>
+        <translation>The field &apos;Title&apos; is not filled</translation>
     </message>
     <message>
+        <location filename="dialogs/addamv.cpp" line="196"/>
         <source>Choose a video file</source>
-        <translation type="vanished">Choose a video file</translation>
+        <translation>Choose a video file</translation>
     </message>
 </context>
 <context>
     <name>DialogAddAnime</name>
     <message>
+        <location filename="addanime.ui" line="14"/>
         <source>Add anime</source>
-        <translation type="vanished">Adding of anime</translation>
+        <translation>Adding of anime</translation>
     </message>
     <message>
+        <location filename="addanime.ui" line="42"/>
         <source>Anime</source>
-        <translation type="vanished">Anime</translation>
+        <translation>Anime</translation>
     </message>
     <message>
+        <location filename="addanime.ui" line="62"/>
         <source>If you want to look at this anime later - deliver a checkbox for display it in the special filter</source>
-        <translation type="vanished">If you want to look at this anime later - deliver a checkbox for display it in the special filter</translation>
+        <translation>If you want to look at this anime later - deliver a checkbox for display it in the special filter</translation>
     </message>
     <message>
+        <location filename="addanime.ui" line="65"/>
         <source>Want to look</source>
-        <translation type="vanished">Want to look</translation>
+        <translation>Want to look</translation>
     </message>
     <message>
+        <location filename="addanime.ui" line="79"/>
         <source>If you didn&apos;t finish editing - deliver a checkbox for display it in the special filter</source>
-        <translation type="vanished">If you didn&apos;t finish editing - deliver a checkbox for display it in the special filter</translation>
+        <translation>If you didn&apos;t finish editing - deliver a checkbox for display it in the special filter</translation>
     </message>
     <message>
+        <location filename="addanime.ui" line="82"/>
         <source>Editing</source>
-        <translation type="vanished">Editing</translation>
+        <translation>Editing</translation>
     </message>
     <message>
+        <location filename="addanime.ui" line="93"/>
         <source>Search on shikimori.org</source>
-        <translation type="vanished">Search on shikimori.org</translation>
+        <translation>Search on shikimori.org</translation>
     </message>
     <message>
+        <location filename="addanime.ui" line="110"/>
         <source>Title</source>
-        <translation type="vanished">Title</translation>
+        <translation>Title</translation>
     </message>
     <message>
+        <location filename="addanime.ui" line="138"/>
         <source>If this checkbox isn&apos;t active - year won&apos;t be displayed</source>
-        <translation type="vanished">If this checkbox isn&apos;t active - year won&apos;t be displayed</translation>
+        <translation>If this checkbox isn&apos;t active - year won&apos;t be displayed</translation>
     </message>
     <message>
+        <location filename="addanime.ui" line="141"/>
         <source>Year:</source>
-        <translation type="vanished">Year:</translation>
+        <translation>Year:</translation>
     </message>
     <message>
+        <location filename="addanime.ui" line="148"/>
+        <location filename="addanime.ui" line="187"/>
+        <location filename="addanime.ui" line="220"/>
+        <location filename="addanime.ui" line="1160"/>
+        <location filename="addanime.ui" line="1170"/>
+        <location filename="addanime.ui" line="1180"/>
+        <location filename="addanime.ui" line="1190"/>
+        <location filename="addanime.ui" line="1200"/>
+        <location filename="addanime.ui" line="1267"/>
+        <location filename="addanime.ui" line="1277"/>
+        <location filename="addanime.ui" line="1287"/>
+        <location filename="addanime.ui" line="1297"/>
+        <location filename="addanime.ui" line="1307"/>
         <source>You can use a mouse wheel for value change</source>
-        <translation type="vanished">You can use a mouse wheel for value change</translation>
+        <translation>You can use a mouse wheel for value change</translation>
     </message>
     <message>
+        <location filename="addanime.ui" line="180"/>
         <source>Season:</source>
-        <translation type="vanished">Season:</translation>
+        <translation>Season:</translation>
     </message>
     <message>
+        <location filename="addanime.ui" line="207"/>
         <source>Studio:</source>
-        <translation type="vanished">Studio:</translation>
+        <translation>Studio:</translation>
     </message>
     <message>
+        <location filename="addanime.ui" line="1067"/>
+        <location filename="addanime.ui" line="1321"/>
         <source>You can use a mouse wheel for switching on tabs</source>
-        <translation type="vanished">You can use a mouse wheel for switching on tabs</translation>
+        <translation>You can use a mouse wheel for switching on tabs</translation>
     </message>
     <message>
+        <location filename="addanime.ui" line="1074"/>
         <source>Total series</source>
-        <translation type="vanished">Total series</translation>
+        <translation>Total series</translation>
     </message>
     <message>
+        <location filename="addanime.ui" line="1086"/>
+        <location filename="addanime.ui" line="1227"/>
         <source>TV</source>
-        <translation type="vanished">TV</translation>
+        <translation>TV</translation>
     </message>
     <message>
+        <location filename="addanime.ui" line="1102"/>
+        <location filename="addanime.ui" line="1237"/>
         <source>OVA</source>
-        <translation type="vanished">OVA</translation>
+        <translation>OVA</translation>
     </message>
     <message>
+        <location filename="addanime.ui" line="1118"/>
+        <location filename="addanime.ui" line="1247"/>
         <source>ONA</source>
-        <translation type="vanished">ONA</translation>
+        <translation>ONA</translation>
     </message>
     <message>
+        <location filename="addanime.ui" line="1134"/>
+        <location filename="addanime.ui" line="1257"/>
         <source>Special</source>
-        <translation type="vanished">Special</translation>
+        <translation>Special</translation>
     </message>
     <message>
+        <location filename="addanime.ui" line="1150"/>
+        <location filename="addanime.ui" line="1217"/>
         <source>Movie</source>
-        <translation type="vanished">Movie</translation>
+        <translation>Movie</translation>
     </message>
     <message>
+        <location filename="addanime.ui" line="1211"/>
         <source>Sees</source>
-        <translation type="vanished">Sees</translation>
+        <translation>Sees</translation>
     </message>
     <message>
+        <location filename="addanime.ui" line="1328"/>
         <source>Genres</source>
-        <translation type="vanished">Ganres</translation>
+        <translation>Ganres</translation>
     </message>
     <message>
+        <location filename="addanime.ui" line="1343"/>
         <source>Enter through a comma, or choose from the list lower</source>
-        <translation type="vanished">Enter through a comma, or choose from the list lower</translation>
+        <translation>Enter through a comma, or choose from the list lower</translation>
     </message>
     <message>
+        <location filename="addanime.ui" line="1373"/>
+        <location filename="addanime.ui" line="1379"/>
         <source>Description</source>
-        <translation type="vanished">Description</translation>
+        <translation>Description</translation>
     </message>
     <message>
+        <location filename="addanime.ui" line="1387"/>
         <source>Media</source>
-        <translation type="vanished">Media</translation>
+        <translation>Media</translation>
     </message>
     <message>
+        <location filename="addanime.ui" line="1401"/>
         <source>Directory</source>
-        <translation type="vanished">Directory</translation>
+        <translation>Directory</translation>
     </message>
     <message>
+        <location filename="addanime.ui" line="1414"/>
+        <source>*</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="addanime.ui" line="1433"/>
         <source>URL</source>
-        <translation type="vanished">URL</translation>
+        <translation>URL</translation>
     </message>
     <message>
+        <location filename="addanime.ui" line="1486"/>
         <source>Drop image here, or a double click for a file choice</source>
-        <translation type="vanished">Drop image here, or a double click for a file choice</translation>
+        <translation>Drop image here, or a double click for a file choice</translation>
     </message>
     <message>
+        <location filename="dialogs/addanime.cpp" line="55"/>
         <source>Alternative title</source>
-        <translation type="vanished">Alternative title</translation>
+        <translation>Alternative title</translation>
     </message>
     <message>
+        <location filename="dialogs/addanime.cpp" line="62"/>
         <source>Director</source>
-        <translation type="vanished">Director</translation>
+        <translation>Director</translation>
     </message>
     <message>
+        <location filename="dialogs/addanime.cpp" line="69"/>
         <source>Postscoring</source>
-        <translation type="vanished">Postscoring</translation>
+        <translation>Postscoring</translation>
     </message>
     <message>
+        <location filename="dialogs/addanime.cpp" line="177"/>
         <source>Editing anime</source>
-        <translation type="vanished">Editing anime</translation>
+        <translation>Editing anime</translation>
     </message>
     <message>
+        <location filename="dialogs/addanime.cpp" line="349"/>
+        <location filename="dialogs/addanime.cpp" line="354"/>
         <source>Critical</source>
-        <translation type="vanished">Critical error</translation>
+        <translation>Critical error</translation>
     </message>
     <message>
+        <location filename="dialogs/addanime.cpp" line="349"/>
         <source>Cannot insert data.</source>
-        <translation type="vanished">Cannot insert data.</translation>
+        <translation>Cannot insert data.</translation>
     </message>
     <message>
+        <location filename="dialogs/addanime.cpp" line="354"/>
         <source>Cannot update data.</source>
-        <translation type="vanished">Cannot update data.</translation>
+        <translation>Cannot update data.</translation>
     </message>
     <message>
+        <location filename="dialogs/addanime.cpp" line="365"/>
+        <location filename="dialogs/addanime.cpp" line="372"/>
         <source>Warning</source>
-        <translation type="vanished">Warning</translation>
+        <translation>Warning</translation>
     </message>
     <message>
+        <location filename="dialogs/addanime.cpp" line="372"/>
         <source>The field &apos;Title&apos; is not filled</source>
-        <translation type="vanished">The field &apos;Title&apos; is not filled</translation>
+        <translation>The field &apos;Title&apos; is not filled</translation>
     </message>
     <message>
+        <location filename="dialogs/addanime.cpp" line="411"/>
         <source>Choose a directory with video files</source>
-        <translation type="vanished">Choose a directory with video files</translation>
+        <translation>Choose a directory with video files</translation>
     </message>
     <message>
+        <location filename="dialogs/addanime.cpp" line="365"/>
         <source>The field &apos;Directory&apos; is uncorrect</source>
-        <translation type="obsolete">The field &apos;Directory&apos; is uncorrect</translation>
+        <translation type="unfinished">The field &apos;Directory&apos; is uncorrect</translation>
     </message>
 </context>
 <context>
     <name>DialogAddDorama</name>
     <message>
+        <location filename="adddorama.ui" line="14"/>
         <source>Add dorama</source>
-        <translation type="vanished">Adding of dorama</translation>
+        <translation>Adding of dorama</translation>
     </message>
     <message>
+        <location filename="adddorama.ui" line="42"/>
         <source>Dorama</source>
-        <translation type="vanished">Dorama</translation>
+        <translation>Dorama</translation>
     </message>
     <message>
+        <location filename="adddorama.ui" line="62"/>
         <source>If you want to look at this dorama later - deliver a checkbox for display it in the special filter</source>
-        <translation type="vanished">If you want to look at this dorama later - deliver a checkbox for display it in the special filter</translation>
+        <translation>If you want to look at this dorama later - deliver a checkbox for display it in the special filter</translation>
     </message>
     <message>
+        <location filename="adddorama.ui" line="65"/>
         <source>Want to look</source>
-        <translation type="vanished">Want to look</translation>
+        <translation>Want to look</translation>
     </message>
     <message>
+        <location filename="adddorama.ui" line="79"/>
         <source>If you didn&apos;t finish editing - deliver a checkbox for display it in the special filter</source>
-        <translation type="vanished">If you didn&apos;t finish editing - deliver a checkbox for display it in the special filter</translation>
+        <translation>If you didn&apos;t finish editing - deliver a checkbox for display it in the special filter</translation>
     </message>
     <message>
+        <location filename="adddorama.ui" line="82"/>
         <source>Editing</source>
-        <translation type="vanished">Editing</translation>
+        <translation>Editing</translation>
     </message>
     <message>
+        <location filename="adddorama.ui" line="97"/>
         <source>Title</source>
-        <translation type="vanished">Title</translation>
+        <translation>Title</translation>
     </message>
     <message>
+        <location filename="adddorama.ui" line="116"/>
         <source>If this checkbox isn&apos;t active - year won&apos;t be displayed</source>
-        <translation type="vanished">If this checkbox isn&apos;t active - year won&apos;t be displayed</translation>
+        <translation>If this checkbox isn&apos;t active - year won&apos;t be displayed</translation>
     </message>
     <message>
+        <location filename="adddorama.ui" line="119"/>
         <source>Year:</source>
-        <translation type="vanished">Year:</translation>
+        <translation>Year:</translation>
     </message>
     <message>
+        <location filename="adddorama.ui" line="126"/>
+        <location filename="adddorama.ui" line="165"/>
+        <location filename="adddorama.ui" line="260"/>
+        <location filename="adddorama.ui" line="270"/>
+        <location filename="adddorama.ui" line="280"/>
+        <location filename="adddorama.ui" line="327"/>
+        <location filename="adddorama.ui" line="337"/>
+        <location filename="adddorama.ui" line="347"/>
         <source>You can use a mouse wheel for value change</source>
-        <translation type="vanished">You can use a mouse wheel for value change</translation>
+        <translation>You can use a mouse wheel for value change</translation>
     </message>
     <message>
+        <location filename="adddorama.ui" line="158"/>
         <source>Season:</source>
-        <translation type="vanished">Season:</translation>
+        <translation>Season:</translation>
     </message>
     <message>
+        <location filename="adddorama.ui" line="199"/>
+        <location filename="adddorama.ui" line="361"/>
         <source>You can use a mouse wheel for switching on tabs</source>
-        <translation type="vanished">You can use a mouse wheel for switching on tabs</translation>
+        <translation>You can use a mouse wheel for switching on tabs</translation>
     </message>
     <message>
+        <location filename="adddorama.ui" line="206"/>
         <source>Total series</source>
-        <translation type="vanished">Total series</translation>
+        <translation>Total series</translation>
     </message>
     <message>
+        <location filename="adddorama.ui" line="218"/>
+        <location filename="adddorama.ui" line="297"/>
         <source>TV</source>
-        <translation type="vanished">TV</translation>
+        <translation>TV</translation>
     </message>
     <message>
+        <location filename="adddorama.ui" line="234"/>
+        <location filename="adddorama.ui" line="307"/>
         <source>Special</source>
-        <translation type="vanished">Special</translation>
+        <translation>Special</translation>
     </message>
     <message>
+        <location filename="adddorama.ui" line="250"/>
+        <location filename="adddorama.ui" line="317"/>
         <source>Movie</source>
-        <translation type="vanished">Movie</translation>
+        <translation>Movie</translation>
     </message>
     <message>
+        <location filename="adddorama.ui" line="291"/>
         <source>Sees</source>
-        <translation type="vanished">Sees</translation>
+        <translation>Sees</translation>
     </message>
     <message>
+        <location filename="adddorama.ui" line="368"/>
         <source>Genres</source>
-        <translation type="vanished">Ganres</translation>
+        <translation>Ganres</translation>
     </message>
     <message>
+        <location filename="adddorama.ui" line="383"/>
         <source>Enter through a comma, or choose from the list lower</source>
-        <translation type="vanished">Enter through a comma, or choose from the list lower</translation>
+        <translation>Enter through a comma, or choose from the list lower</translation>
     </message>
     <message>
+        <location filename="adddorama.ui" line="416"/>
+        <location filename="adddorama.ui" line="422"/>
         <source>Description</source>
-        <translation type="vanished">Description</translation>
+        <translation>Description</translation>
     </message>
     <message>
+        <location filename="adddorama.ui" line="430"/>
+        <location filename="adddorama.ui" line="436"/>
         <source>In roles</source>
-        <translation type="vanished">In roles</translation>
+        <translation>In roles</translation>
     </message>
     <message>
+        <location filename="adddorama.ui" line="444"/>
         <source>Media</source>
-        <translation type="vanished">Media</translation>
+        <translation>Media</translation>
     </message>
     <message>
+        <location filename="adddorama.ui" line="458"/>
         <source>File</source>
-        <translation type="vanished">File</translation>
+        <translation>File</translation>
     </message>
     <message>
+        <location filename="adddorama.ui" line="471"/>
+        <source>*</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="adddorama.ui" line="490"/>
         <source>URL</source>
-        <translation type="vanished">URL</translation>
+        <translation>URL</translation>
     </message>
     <message>
+        <location filename="adddorama.ui" line="543"/>
         <source>Drop image here, or a double click for a file choice</source>
-        <translation type="vanished">Drop image here, or a double click for a file choice</translation>
+        <translation>Drop image here, or a double click for a file choice</translation>
     </message>
     <message>
+        <location filename="dialogs/adddorama.cpp" line="30"/>
         <source>Alternative title</source>
-        <translation type="vanished">Alternative title</translation>
+        <translation>Alternative title</translation>
     </message>
     <message>
+        <location filename="dialogs/adddorama.cpp" line="37"/>
         <source>Director</source>
-        <translation type="vanished">Director</translation>
+        <translation>Director</translation>
     </message>
     <message>
+        <location filename="dialogs/adddorama.cpp" line="113"/>
         <source>Editing dorama</source>
-        <translation type="vanished">Editing dorama</translation>
+        <translation>Editing dorama</translation>
     </message>
     <message>
+        <location filename="dialogs/adddorama.cpp" line="240"/>
+        <location filename="dialogs/adddorama.cpp" line="245"/>
         <source>Critical</source>
-        <translation type="vanished">Critical error</translation>
+        <translation>Critical error</translation>
     </message>
     <message>
+        <location filename="dialogs/adddorama.cpp" line="240"/>
         <source>Cannot insert data.</source>
-        <translation type="vanished">Cannot insert data.</translation>
+        <translation>Cannot insert data.</translation>
     </message>
     <message>
+        <location filename="dialogs/adddorama.cpp" line="245"/>
         <source>Cannot update data.</source>
-        <translation type="vanished">Cannot update data.</translation>
+        <translation>Cannot update data.</translation>
     </message>
     <message>
+        <location filename="dialogs/adddorama.cpp" line="256"/>
+        <location filename="dialogs/adddorama.cpp" line="263"/>
         <source>Warning</source>
-        <translation type="vanished">Warning</translation>
+        <translation>Warning</translation>
     </message>
     <message>
+        <location filename="dialogs/adddorama.cpp" line="256"/>
         <source>The field &apos;Directory&apos; is uncorrect</source>
-        <translation type="vanished">The field &apos;Directory&apos; is uncorrect</translation>
+        <translation>The field &apos;Directory&apos; is uncorrect</translation>
     </message>
     <message>
+        <location filename="dialogs/adddorama.cpp" line="263"/>
         <source>The field &apos;Title&apos; is not filled</source>
-        <translation type="vanished">The field &apos;Title&apos; is not filled</translation>
+        <translation>The field &apos;Title&apos; is not filled</translation>
     </message>
     <message>
+        <location filename="dialogs/adddorama.cpp" line="292"/>
         <source>Choose a directory with video files</source>
-        <translation type="vanished">Choose a directory with video files</translation>
+        <translation>Choose a directory with video files</translation>
     </message>
 </context>
 <context>
     <name>DialogAddManga</name>
     <message>
+        <location filename="addmanga.ui" line="14"/>
         <source>Add manga</source>
-        <translation type="vanished">Adding of manga</translation>
+        <translation>Adding of manga</translation>
     </message>
     <message>
+        <location filename="addmanga.ui" line="42"/>
         <source>Manga</source>
-        <translation type="vanished">Manga</translation>
+        <translation>Manga</translation>
     </message>
     <message>
+        <location filename="addmanga.ui" line="62"/>
         <source>If you want to read this manga later - deliver a checkbox for display it in the special filter</source>
-        <translation type="vanished">If you want to read this manga later - deliver a checkbox for display it in the special filter</translation>
+        <translation>If you want to read this manga later - deliver a checkbox for display it in the special filter</translation>
     </message>
     <message>
+        <location filename="addmanga.ui" line="65"/>
         <source>Want to read</source>
-        <translation type="vanished">Want to read</translation>
+        <translation>Want to read</translation>
     </message>
     <message>
+        <location filename="addmanga.ui" line="79"/>
         <source>If you didn&apos;t finish editing - deliver a checkbox for display it in the special filter</source>
-        <translation type="vanished">If you didn&apos;t finish editing - deliver a checkbox for display it in the special filter</translation>
+        <translation>If you didn&apos;t finish editing - deliver a checkbox for display it in the special filter</translation>
     </message>
     <message>
+        <location filename="addmanga.ui" line="82"/>
         <source>Editing</source>
-        <translation type="vanished">Editing</translation>
+        <translation>Editing</translation>
     </message>
     <message>
+        <location filename="addmanga.ui" line="96"/>
         <source>Search on shikimori.org</source>
-        <translation type="vanished">Search on shikimori.org</translation>
+        <translation>Search on shikimori.org</translation>
     </message>
     <message>
+        <location filename="addmanga.ui" line="116"/>
         <source>Title</source>
-        <translation type="vanished">Title</translation>
+        <translation>Title</translation>
     </message>
     <message>
+        <location filename="addmanga.ui" line="126"/>
         <source>If this checkbox isn&apos;t active - year won&apos;t be displayed</source>
-        <translation type="vanished">If this checkbox isn&apos;t active - year won&apos;t be displayed</translation>
+        <translation>If this checkbox isn&apos;t active - year won&apos;t be displayed</translation>
     </message>
     <message>
+        <location filename="addmanga.ui" line="129"/>
         <source>Year:</source>
-        <translation type="vanished">Year:</translation>
+        <translation>Year:</translation>
     </message>
     <message>
+        <location filename="addmanga.ui" line="136"/>
+        <location filename="addmanga.ui" line="241"/>
+        <location filename="addmanga.ui" line="251"/>
+        <location filename="addmanga.ui" line="261"/>
+        <location filename="addmanga.ui" line="308"/>
+        <location filename="addmanga.ui" line="318"/>
+        <location filename="addmanga.ui" line="328"/>
         <source>You can use a mouse wheel for value change</source>
-        <translation type="vanished">You can use a mouse wheel for value change</translation>
+        <translation>You can use a mouse wheel for value change</translation>
     </message>
     <message>
+        <location filename="addmanga.ui" line="180"/>
+        <location filename="addmanga.ui" line="342"/>
         <source>You can use a mouse wheel for switching on tabs</source>
-        <translation type="vanished">You can use a mouse wheel for switching on tabs</translation>
+        <translation>You can use a mouse wheel for switching on tabs</translation>
     </message>
     <message>
+        <location filename="addmanga.ui" line="187"/>
         <source>Total books</source>
-        <translation type="vanished">Total books</translation>
+        <translation>Total books</translation>
     </message>
     <message>
+        <location filename="addmanga.ui" line="199"/>
         <source>&amp;Volumes</source>
-        <translation type="vanished">&amp;Volumes</translation>
+        <translation>&amp;Volumes</translation>
     </message>
     <message>
+        <location filename="addmanga.ui" line="215"/>
         <source>&amp;Charapters</source>
-        <translation type="vanished">&amp;Charapters</translation>
+        <translation>&amp;Charapters</translation>
     </message>
     <message>
+        <location filename="addmanga.ui" line="231"/>
         <source>&amp;Pages</source>
-        <translation type="vanished">&amp;Pages</translation>
+        <translation>&amp;Pages</translation>
     </message>
     <message>
+        <location filename="addmanga.ui" line="278"/>
         <source>&amp;Volume</source>
-        <translation type="vanished">&amp;Volume</translation>
+        <translation>&amp;Volume</translation>
     </message>
     <message>
+        <location filename="addmanga.ui" line="288"/>
         <source>&amp;Charapter</source>
-        <translation type="vanished">&amp;Charapter</translation>
+        <translation>&amp;Charapter</translation>
     </message>
     <message>
+        <location filename="addmanga.ui" line="298"/>
         <source>&amp;Page</source>
-        <translation type="vanished">&amp;Page</translation>
+        <translation>&amp;Page</translation>
     </message>
     <message>
         <source>Volumes</source>
@@ -513,8 +698,9 @@
         <translation type="vanished">Pages</translation>
     </message>
     <message>
+        <location filename="addmanga.ui" line="272"/>
         <source>Read</source>
-        <translation type="vanished">Read</translation>
+        <translation>Read</translation>
     </message>
     <message>
         <source>Volume</source>
@@ -529,76 +715,102 @@
         <translation type="vanished">Page</translation>
     </message>
     <message>
+        <location filename="addmanga.ui" line="349"/>
         <source>Genres</source>
-        <translation type="vanished">Ganres</translation>
+        <translation>Ganres</translation>
     </message>
     <message>
+        <location filename="addmanga.ui" line="364"/>
         <source>Enter through a comma, or choose from the list lower</source>
-        <translation type="vanished">Enter through a comma, or choose from the list lower</translation>
+        <translation>Enter through a comma, or choose from the list lower</translation>
     </message>
     <message>
+        <location filename="addmanga.ui" line="412"/>
+        <location filename="addmanga.ui" line="418"/>
         <source>Description</source>
-        <translation type="vanished">Description</translation>
+        <translation>Description</translation>
     </message>
     <message>
+        <location filename="addmanga.ui" line="426"/>
         <source>Media</source>
-        <translation type="vanished">Media</translation>
+        <translation>Media</translation>
     </message>
     <message>
+        <location filename="addmanga.ui" line="440"/>
         <source>Directory</source>
-        <translation type="vanished">Directory</translation>
+        <translation>Directory</translation>
     </message>
     <message>
+        <location filename="addmanga.ui" line="453"/>
+        <source>*</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="addmanga.ui" line="472"/>
         <source>URL</source>
-        <translation type="vanished">URL</translation>
+        <translation>URL</translation>
     </message>
     <message>
+        <location filename="addmanga.ui" line="525"/>
         <source>Drop image here, or a double click for a file choice</source>
-        <translation type="vanished">Drop image here, or a double click for a file choice</translation>
+        <translation>Drop image here, or a double click for a file choice</translation>
     </message>
     <message>
+        <location filename="dialogs/addmanga.cpp" line="98"/>
         <source>Alternative title</source>
-        <translation type="vanished">Alternative title</translation>
+        <translation>Alternative title</translation>
     </message>
     <message>
+        <location filename="dialogs/addmanga.cpp" line="105"/>
         <source>Author</source>
-        <translation type="vanished">Author</translation>
+        <translation>Author</translation>
     </message>
     <message>
+        <location filename="dialogs/addmanga.cpp" line="112"/>
         <source>Translation</source>
-        <translation type="vanished">Translator</translation>
+        <translation>Translator</translation>
     </message>
     <message>
+        <location filename="dialogs/addmanga.cpp" line="173"/>
         <source>Editing manga</source>
-        <translation type="vanished">Editing manga</translation>
+        <translation>Editing manga</translation>
     </message>
     <message>
+        <location filename="dialogs/addmanga.cpp" line="323"/>
+        <location filename="dialogs/addmanga.cpp" line="328"/>
         <source>Critical</source>
-        <translation type="vanished">Critical error</translation>
+        <translation>Critical error</translation>
     </message>
     <message>
+        <location filename="dialogs/addmanga.cpp" line="323"/>
         <source>Cannot insert data</source>
-        <translation type="vanished">Cannot insert data</translation>
+        <translation>Cannot insert data</translation>
     </message>
     <message>
+        <location filename="dialogs/addmanga.cpp" line="328"/>
         <source>Cannot update data</source>
-        <translation type="vanished">Cannot update data</translation>
+        <translation>Cannot update data</translation>
     </message>
     <message>
+        <location filename="dialogs/addmanga.cpp" line="339"/>
+        <location filename="dialogs/addmanga.cpp" line="346"/>
         <source>Warning</source>
-        <translation type="vanished">Warning</translation>
+        <translation>Warning</translation>
     </message>
     <message>
+        <location filename="dialogs/addmanga.cpp" line="339"/>
         <source>The field &apos;Directory&apos; is uncorrect</source>
-        <translation type="vanished">The field &apos;Directory&apos; is uncorrect</translation>
+        <translation>The field &apos;Directory&apos; is uncorrect</translation>
     </message>
     <message>
+        <location filename="dialogs/addmanga.cpp" line="346"/>
         <source>The field &apos;Title&apos; is not filled</source>
-        <translation type="vanished">The field &apos;Title&apos; is not filled</translation>
+        <translation>The field &apos;Title&apos; is not filled</translation>
     </message>
     <message>
+        <location filename="dialogs/addmanga.cpp" line="384"/>
         <source>Choose a directory with picture files</source>
-        <translation type="vanished">Choose a directory with a manga</translation>
+        <translation>Choose a directory with a manga</translation>
     </message>
 </context>
 <context>
@@ -835,32 +1047,39 @@
 <context>
     <name>ImageCover</name>
     <message>
+        <location filename="widgets/imagecover.cpp" line="23"/>
         <source>&amp;Choose image</source>
-        <translation type="vanished">&amp;Choose image</translation>
+        <translation>&amp;Choose image</translation>
     </message>
     <message>
+        <location filename="widgets/imagecover.cpp" line="24"/>
         <source>Clea&amp;n image</source>
-        <translation type="vanished">Clea&amp;n image</translation>
+        <translation>Clea&amp;n image</translation>
     </message>
     <message>
+        <location filename="widgets/imagecover.cpp" line="25"/>
         <source>&amp;Reload image</source>
-        <translation type="vanished">&amp;Reload image</translation>
+        <translation>&amp;Reload image</translation>
     </message>
     <message>
+        <location filename="widgets/imagecover.cpp" line="58"/>
         <source>Open picture</source>
-        <translation type="vanished">Choose picture</translation>
+        <translation>Choose picture</translation>
     </message>
     <message>
+        <location filename="widgets/imagecover.cpp" line="59"/>
         <source>Images</source>
-        <translation type="vanished">Images</translation>
+        <translation>Images</translation>
     </message>
     <message>
+        <location filename="widgets/imagecover.cpp" line="107"/>
         <source>Warning</source>
-        <translation type="vanished">Warning</translation>
+        <translation>Warning</translation>
     </message>
     <message>
+        <location filename="widgets/imagecover.cpp" line="107"/>
         <source>It was not succeeded to load the picture</source>
-        <translation type="vanished">It was not succeeded to load the picture</translation>
+        <translation>It was not succeeded to load the picture</translation>
     </message>
 </context>
 <context>
@@ -870,655 +1089,956 @@
         <translation type="vanished">Database Anime</translation>
     </message>
     <message>
+        <location filename="mainwindow.ui" line="88"/>
         <source>Search</source>
-        <translation type="vanished">Search</translation>
+        <translation>Search</translation>
     </message>
     <message>
+        <location filename="mainwindow.ui" line="116"/>
         <source>Add</source>
         <extracomment>Hint(toolTip) Button Add</extracomment>
-        <translation type="vanished">To add in the current section</translation>
+        <translation>To add in the current section</translation>
     </message>
     <message>
+        <location filename="mainwindow.ui" line="126"/>
+        <source>Ctrl+A</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="155"/>
         <source>Edit</source>
         <extracomment>Hint(toolTip) Button Edit</extracomment>
-        <translation type="vanished">To edit the selected</translation>
+        <translation>To edit the selected</translation>
     </message>
     <message>
+        <location filename="mainwindow.ui" line="165"/>
+        <source>Ctrl+E</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="194"/>
         <source>Delete</source>
         <extracomment>Hint(toolTip) Button Delete</extracomment>
-        <translation type="vanished">To delete the selected</translation>
+        <translation>To delete the selected</translation>
     </message>
     <message>
+        <location filename="mainwindow.ui" line="204"/>
+        <source>Ctrl+D</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="275"/>
         <source>&amp;Options</source>
-        <translation type="vanished">&amp;Options</translation>
+        <translation>&amp;Options</translation>
     </message>
     <message>
+        <location filename="mainwindow.ui" line="282"/>
+        <source>Ctrl+O</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="493"/>
         <source>Developer:</source>
-        <translation type="vanished">Developer:</translation>
+        <translation>Developer:</translation>
     </message>
     <message>
+        <location filename="mainwindow.ui" line="513"/>
         <source>Designer:</source>
-        <translation type="vanished">Designer:</translation>
+        <translation>Designer:</translation>
     </message>
     <message>
+        <location filename="mainwindow.ui" line="520"/>
         <source>Maxx Volny</source>
         <extracomment>Label Value Design Author</extracomment>
-        <translation type="vanished">Maxx Volny</translation>
+        <translation>Maxx Volny</translation>
     </message>
     <message>
+        <location filename="mainwindow.ui" line="527"/>
         <source>Version:</source>
-        <translation type="vanished">Version:</translation>
+        <translation>Version:</translation>
     </message>
     <message>
+        <location filename="mainwindow.ui" line="541"/>
         <source>License:</source>
-        <translation type="vanished">License:</translation>
+        <translation>License:</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="116"/>
         <source>Older version</source>
-        <translation type="vanished">Outdated version</translation>
+        <translation>Outdated version</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="226"/>
+        <location filename="mainwindow.cpp" line="235"/>
+        <location filename="mainwindow.cpp" line="264"/>
         <source>Warning</source>
-        <translation type="vanished">Warning</translation>
+        <translation>Warning</translation>
     </message>
     <message>
         <source>Section is don&apos;t selected</source>
         <translation type="vanished">Item isn&apos;t selected</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="226"/>
+        <location filename="mainwindow.cpp" line="264"/>
         <source>Item isn&apos;t selected</source>
-        <translation type="vanished">Item isn&apos;t selected</translation>
+        <translation>Item isn&apos;t selected</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="236"/>
         <source>&lt;b&gt;Delete&lt;/b&gt; selected item?</source>
-        <translation type="vanished">&lt;b&gt;Delete&lt;/b&gt; selected item?</translation>
+        <translation>&lt;b&gt;Delete&lt;/b&gt; selected item?</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="255"/>
         <source>Critical</source>
-        <translation type="vanished">Critical error</translation>
+        <translation>Critical error</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="255"/>
         <source>It was not succeeded to remove record</source>
-        <translation type="vanished">It was not succeeded to remove record</translation>
+        <translation>It was not succeeded to remove record</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="353"/>
         <source>Main</source>
-        <translation type="vanished">Main</translation>
+        <translation>Main</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="356"/>
         <source>Anime</source>
-        <translation type="vanished">Anime</translation>
+        <translation>Anime</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="362"/>
         <source>Manga</source>
-        <translation type="vanished">Manga</translation>
+        <translation>Manga</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="368"/>
         <source>AMV</source>
-        <translation type="vanished">AMV</translation>
+        <translation>AMV</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="374"/>
         <source>Dorama</source>
-        <translation type="vanished">Dorama</translation>
+        <translation>Dorama</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="382"/>
+        <location filename="mainwindow.cpp" line="402"/>
+        <location filename="mainwindow.cpp" line="410"/>
+        <location filename="mainwindow.cpp" line="416"/>
         <source>All</source>
-        <translation type="vanished">All</translation>
+        <translation>All</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="384"/>
+        <location filename="mainwindow.cpp" line="404"/>
+        <location filename="mainwindow.cpp" line="412"/>
+        <location filename="mainwindow.cpp" line="418"/>
         <source>Editing</source>
-        <translation type="vanished">Editing</translation>
+        <translation>Editing</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="386"/>
+        <location filename="mainwindow.cpp" line="420"/>
         <source>Want to look</source>
-        <translation type="vanished">Want to look</translation>
+        <translation>Want to look</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="388"/>
+        <location filename="mainwindow.cpp" line="422"/>
         <source>Looked</source>
-        <translation type="vanished">Looked</translation>
+        <translation>Looked</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="390"/>
+        <location filename="mainwindow.cpp" line="424"/>
         <source>TV</source>
-        <translation type="vanished">TV</translation>
+        <translation>TV</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="392"/>
         <source>OVA</source>
-        <translation type="vanished">OVA</translation>
+        <translation>OVA</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="394"/>
         <source>ONA</source>
-        <translation type="vanished">ONA</translation>
+        <translation>ONA</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="396"/>
+        <location filename="mainwindow.cpp" line="426"/>
         <source>Special</source>
-        <translation type="vanished">Special</translation>
+        <translation>Special</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="398"/>
+        <location filename="mainwindow.cpp" line="428"/>
         <source>Movie</source>
-        <translation type="vanished">Movie</translation>
+        <translation>Movie</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="406"/>
         <source>Want to read</source>
-        <translation type="vanished">Want to read</translation>
+        <translation>Want to read</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="544"/>
+        <location filename="mainwindow.cpp" line="674"/>
+        <location filename="mainwindow.cpp" line="760"/>
+        <location filename="mainwindow.cpp" line="888"/>
         <source>Title:</source>
-        <translation type="vanished">Title:</translation>
+        <translation>Title:</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="548"/>
+        <location filename="mainwindow.cpp" line="678"/>
+        <location filename="mainwindow.cpp" line="892"/>
         <source>Alt title:</source>
-        <translation type="vanished">Alt title:</translation>
+        <translation>Alt title:</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="553"/>
+        <location filename="mainwindow.cpp" line="683"/>
+        <location filename="mainwindow.cpp" line="897"/>
         <source>Director:</source>
-        <translation type="vanished">Director:</translation>
+        <translation>Director:</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="558"/>
+        <location filename="mainwindow.cpp" line="693"/>
+        <location filename="mainwindow.cpp" line="774"/>
+        <location filename="mainwindow.cpp" line="902"/>
         <source>Year:</source>
-        <translation type="vanished">Year:</translation>
+        <translation>Year:</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="563"/>
+        <location filename="mainwindow.cpp" line="907"/>
         <source>Season:</source>
-        <translation type="vanished">Season:</translation>
+        <translation>Season:</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="568"/>
+        <location filename="mainwindow.cpp" line="912"/>
         <source>Postscoring:</source>
-        <translation type="vanished">Postscoring:</translation>
+        <translation>Postscoring:</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="573"/>
         <source>Studio:</source>
-        <translation type="vanished">Studio:</translation>
+        <translation>Studio:</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="578"/>
+        <location filename="mainwindow.cpp" line="698"/>
+        <location filename="mainwindow.cpp" line="779"/>
+        <location filename="mainwindow.cpp" line="917"/>
         <source>Ganres:</source>
-        <translation type="vanished">Ganres:</translation>
+        <translation>Ganres:</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="582"/>
+        <location filename="mainwindow.cpp" line="702"/>
+        <location filename="mainwindow.cpp" line="928"/>
         <source>Description:</source>
-        <translation type="vanished">Description:</translation>
+        <translation>Description:</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="688"/>
         <source>Translator:</source>
-        <translation type="vanished">Translator:</translation>
+        <translation>Translator:</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="764"/>
         <source>Author:</source>
-        <translation type="vanished">Author:</translation>
+        <translation>Author:</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="769"/>
         <source>Сontestant:</source>
-        <translation type="vanished">Contestant:</translation>
+        <translation>Contestant:</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="783"/>
         <source>Author comment:</source>
-        <translation type="vanished">Author comment:</translation>
+        <translation>Author comment:</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="791"/>
         <source>Containing music:</source>
-        <translation type="vanished">Containing music:</translation>
+        <translation>Containing music:</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="799"/>
         <source>Containing anime:</source>
-        <translation type="vanished">Containing anime:</translation>
+        <translation>Containing anime:</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="818"/>
         <source>Play</source>
-        <translation type="vanished">Play</translation>
+        <translation>Play</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="921"/>
         <source>In roles:</source>
-        <translation type="vanished">In roles:</translation>
+        <translation>In roles:</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
+        <location filename="main.cpp" line="72"/>
         <source>Database Anime</source>
-        <translation type="vanished">Database Anime</translation>
+        <translation>Database Anime</translation>
     </message>
     <message>
+        <location filename="mngrconnection.cpp" line="11"/>
+        <location filename="mngrconnection.cpp" line="20"/>
         <source>Critical</source>
-        <translation type="vanished">Critical error</translation>
+        <translation>Critical error</translation>
     </message>
     <message>
+        <location filename="mngrconnection.cpp" line="12"/>
         <source>Cannot avalible database driver</source>
-        <translation type="vanished">Cannot avalible database driver</translation>
+        <translation>Cannot avalible database driver</translation>
     </message>
     <message>
+        <location filename="mngrconnection.cpp" line="21"/>
         <source>It was not succeeded to create a directory for a database.</source>
-        <translation type="vanished">It was not succeeded to create a directory for a database.</translation>
+        <translation>It was not succeeded to create a directory for a database.</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="378"/>
+        <location filename="mngrquerys.cpp" line="398"/>
+        <location filename="mngrquerys.cpp" line="418"/>
         <source>Action</source>
-        <translation type="vanished">Action</translation>
+        <translation>Action</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="378"/>
+        <location filename="mngrquerys.cpp" line="398"/>
         <source>Futunari</source>
-        <translation type="vanished">Futunari</translation>
+        <translation>Futunari</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="378"/>
+        <location filename="mngrquerys.cpp" line="398"/>
         <source>Music</source>
-        <translation type="vanished">Music</translation>
+        <translation>Music</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="378"/>
+        <location filename="mngrquerys.cpp" line="398"/>
         <source>Shounen</source>
-        <translation type="vanished">Shounen</translation>
+        <translation>Shounen</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="379"/>
+        <location filename="mngrquerys.cpp" line="399"/>
+        <location filename="mngrquerys.cpp" line="428"/>
         <source>Adventure</source>
-        <translation type="vanished">Adventure</translation>
+        <translation>Adventure</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="379"/>
+        <location filename="mngrquerys.cpp" line="399"/>
+        <location filename="mngrquerys.cpp" line="429"/>
         <source>Game</source>
-        <translation type="vanished">Game</translation>
+        <translation>Game</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="379"/>
+        <location filename="mngrquerys.cpp" line="399"/>
         <source>Mystery</source>
-        <translation type="vanished">Mystery</translation>
+        <translation>Mystery</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="379"/>
+        <location filename="mngrquerys.cpp" line="399"/>
         <source>Shounen-ai (Yaoi)</source>
-        <translation type="vanished">Shounen-ai (Yaoi)</translation>
+        <translation>Shounen-ai (Yaoi)</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="380"/>
+        <location filename="mngrquerys.cpp" line="400"/>
         <source>Bara</source>
-        <translation type="vanished">Bara</translation>
+        <translation>Bara</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="380"/>
+        <location filename="mngrquerys.cpp" line="400"/>
+        <location filename="mngrquerys.cpp" line="431"/>
         <source>Gender intrigue</source>
-        <translation type="vanished">Gender intrigue</translation>
+        <translation>Gender intrigue</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="380"/>
+        <location filename="mngrquerys.cpp" line="400"/>
+        <location filename="mngrquerys.cpp" line="442"/>
         <source>Parody</source>
-        <translation type="vanished">Parody</translation>
+        <translation>Parody</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="380"/>
+        <location filename="mngrquerys.cpp" line="400"/>
         <source>Space</source>
-        <translation type="vanished">Space</translation>
+        <translation>Space</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="381"/>
+        <location filename="mngrquerys.cpp" line="401"/>
+        <location filename="mngrquerys.cpp" line="432"/>
         <source>Comedy</source>
-        <translation type="vanished">Comedy</translation>
+        <translation>Comedy</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="381"/>
+        <location filename="mngrquerys.cpp" line="401"/>
         <source>Guro</source>
-        <translation type="vanished">Guro</translation>
+        <translation>Guro</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="381"/>
+        <location filename="mngrquerys.cpp" line="401"/>
         <source>Philosophy</source>
-        <translation type="vanished">Philosophy</translation>
+        <translation>Philosophy</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="381"/>
+        <location filename="mngrquerys.cpp" line="401"/>
+        <location filename="mngrquerys.cpp" line="435"/>
         <source>Sport</source>
-        <translation type="vanished">Sport</translation>
+        <translation>Sport</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="382"/>
+        <location filename="mngrquerys.cpp" line="402"/>
         <source>Cooking</source>
-        <translation type="vanished">Cooking</translation>
+        <translation>Cooking</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="382"/>
+        <location filename="mngrquerys.cpp" line="402"/>
         <source>Harem</source>
-        <translation type="vanished">Harem</translation>
+        <translation>Harem</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="382"/>
+        <location filename="mngrquerys.cpp" line="402"/>
         <source>Police</source>
-        <translation type="vanished">Police</translation>
+        <translation>Police</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="382"/>
+        <location filename="mngrquerys.cpp" line="402"/>
         <source>Steampunk</source>
-        <translation type="vanished">Steampunk</translation>
+        <translation>Steampunk</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="383"/>
+        <location filename="mngrquerys.cpp" line="403"/>
         <source>Cyberpunk</source>
-        <translation type="vanished">Cyberpunk</translation>
+        <translation>Cyberpunk</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="383"/>
+        <location filename="mngrquerys.cpp" line="403"/>
         <source>Hentai</source>
-        <translation type="vanished">Hentai</translation>
+        <translation>Hentai</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="383"/>
+        <location filename="mngrquerys.cpp" line="403"/>
         <source>Post-apocalyptic</source>
-        <translation type="vanished">Post-apocalyptic</translation>
+        <translation>Post-apocalyptic</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="383"/>
+        <location filename="mngrquerys.cpp" line="403"/>
         <source>Supernatural</source>
-        <translation type="vanished">Supernatural</translation>
+        <translation>Supernatural</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="384"/>
+        <location filename="mngrquerys.cpp" line="404"/>
+        <location filename="mngrquerys.cpp" line="434"/>
         <source>Daily occurrence</source>
-        <translation type="vanished">Daily occurrence</translation>
+        <translation>Daily occurrence</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="384"/>
+        <location filename="mngrquerys.cpp" line="404"/>
+        <location filename="mngrquerys.cpp" line="432"/>
         <source>Historical</source>
-        <translation type="vanished">Historical</translation>
+        <translation>Historical</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="384"/>
+        <location filename="mngrquerys.cpp" line="404"/>
+        <location filename="mngrquerys.cpp" line="429"/>
         <source>Psychology</source>
-        <translation type="vanished">Psychology</translation>
+        <translation>Psychology</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="384"/>
+        <location filename="mngrquerys.cpp" line="404"/>
+        <location filename="mngrquerys.cpp" line="438"/>
         <source>Tale</source>
-        <translation type="vanished">Tale</translation>
+        <translation>Tale</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="385"/>
+        <location filename="mngrquerys.cpp" line="405"/>
         <source>Demons</source>
-        <translation type="vanished">Demons</translation>
+        <translation>Demons</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="385"/>
+        <location filename="mngrquerys.cpp" line="405"/>
+        <location filename="mngrquerys.cpp" line="421"/>
+        <location filename="mngrquerys.cpp" line="433"/>
         <source>Horror</source>
-        <translation type="vanished">Horror</translation>
+        <translation>Horror</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="385"/>
+        <location filename="mngrquerys.cpp" line="405"/>
         <source>Ranobe</source>
-        <translation type="vanished">Ranobe</translation>
+        <translation>Ranobe</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="385"/>
+        <location filename="mngrquerys.cpp" line="405"/>
         <source>Tentacles</source>
-        <translation type="vanished">Tentacles</translation>
+        <translation>Tentacles</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="386"/>
+        <location filename="mngrquerys.cpp" line="406"/>
+        <location filename="mngrquerys.cpp" line="435"/>
         <source>Detective</source>
-        <translation type="vanished">Detective</translation>
+        <translation>Detective</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="386"/>
+        <location filename="mngrquerys.cpp" line="406"/>
         <source>Josei</source>
-        <translation type="vanished">Josei</translation>
+        <translation>Josei</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="386"/>
+        <location filename="mngrquerys.cpp" line="406"/>
         <source>Romantic</source>
-        <translation type="vanished">Romantic</translation>
+        <translation>Romantic</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="386"/>
+        <location filename="mngrquerys.cpp" line="406"/>
         <source>The children&apos;s</source>
-        <translation type="vanished">The children&apos;s</translation>
+        <translation>The children&apos;s</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="387"/>
+        <location filename="mngrquerys.cpp" line="407"/>
+        <location filename="mngrquerys.cpp" line="418"/>
+        <location filename="mngrquerys.cpp" line="437"/>
         <source>Drama</source>
-        <translation type="vanished">Drama</translation>
+        <translation>Drama</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="387"/>
+        <location filename="mngrquerys.cpp" line="407"/>
         <source>Kodomo</source>
-        <translation type="vanished">Kodomo</translation>
+        <translation>Kodomo</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="387"/>
+        <location filename="mngrquerys.cpp" line="407"/>
         <source>Samurai</source>
-        <translation type="vanished">Samurai</translation>
+        <translation>Samurai</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="387"/>
+        <location filename="mngrquerys.cpp" line="407"/>
+        <location filename="mngrquerys.cpp" line="439"/>
         <source>Thriller</source>
-        <translation type="vanished">Thriller</translation>
+        <translation>Thriller</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="388"/>
+        <location filename="mngrquerys.cpp" line="408"/>
+        <location filename="mngrquerys.cpp" line="419"/>
         <source>Ecchi</source>
-        <translation type="vanished">Ecchi</translation>
+        <translation>Ecchi</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="388"/>
+        <location filename="mngrquerys.cpp" line="408"/>
         <source>Madness</source>
-        <translation type="vanished">Madness</translation>
+        <translation>Madness</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="388"/>
+        <location filename="mngrquerys.cpp" line="408"/>
+        <location filename="mngrquerys.cpp" line="432"/>
         <source>School</source>
-        <translation type="vanished">School</translation>
+        <translation>School</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="388"/>
+        <location filename="mngrquerys.cpp" line="408"/>
+        <location filename="mngrquerys.cpp" line="441"/>
         <source>Tragedy</source>
-        <translation type="vanished">Tragedy</translation>
+        <translation>Tragedy</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="389"/>
+        <location filename="mngrquerys.cpp" line="409"/>
+        <location filename="mngrquerys.cpp" line="439"/>
         <source>Family</source>
-        <translation type="vanished">Family</translation>
+        <translation>Family</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="389"/>
+        <location filename="mngrquerys.cpp" line="409"/>
         <source>Magic</source>
-        <translation type="vanished">Magic</translation>
+        <translation>Magic</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="389"/>
+        <location filename="mngrquerys.cpp" line="409"/>
         <source>Science Fiction</source>
-        <translation type="vanished">Science Fiction</translation>
+        <translation>Science Fiction</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="389"/>
+        <location filename="mngrquerys.cpp" line="409"/>
+        <location filename="mngrquerys.cpp" line="428"/>
         <source>Vampires</source>
-        <translation type="vanished">Vampires</translation>
+        <translation>Vampires</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="390"/>
+        <location filename="mngrquerys.cpp" line="410"/>
+        <location filename="mngrquerys.cpp" line="440"/>
         <source>Fantastic</source>
-        <translation type="vanished">Fantastic</translation>
+        <translation>Fantastic</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="390"/>
+        <location filename="mngrquerys.cpp" line="410"/>
         <source>Magical girl</source>
-        <translation type="vanished">Magical girl</translation>
+        <translation>Magical girl</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="390"/>
+        <location filename="mngrquerys.cpp" line="410"/>
         <source>Seinen</source>
-        <translation type="vanished">Seinen</translation>
+        <translation>Seinen</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="390"/>
+        <location filename="mngrquerys.cpp" line="410"/>
         <source>War</source>
-        <translation type="vanished">War</translation>
+        <translation>War</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="391"/>
+        <location filename="mngrquerys.cpp" line="411"/>
+        <location filename="mngrquerys.cpp" line="441"/>
         <source>Fantasy</source>
-        <translation type="vanished">Fantasy</translation>
+        <translation>Fantasy</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="391"/>
+        <location filename="mngrquerys.cpp" line="411"/>
+        <location filename="mngrquerys.cpp" line="436"/>
         <source>Martial Arts</source>
-        <translation type="vanished">Martial Arts</translation>
+        <translation>Martial Arts</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="391"/>
+        <location filename="mngrquerys.cpp" line="411"/>
         <source>Shojo</source>
-        <translation type="vanished">Shojo</translation>
+        <translation>Shojo</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="391"/>
+        <location filename="mngrquerys.cpp" line="411"/>
         <source>Yonkoma</source>
-        <translation type="vanished">Yonkoma</translation>
+        <translation>Yonkoma</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="392"/>
+        <location filename="mngrquerys.cpp" line="412"/>
+        <location filename="mngrquerys.cpp" line="442"/>
         <source>Fighter</source>
-        <translation type="vanished">Fighter</translation>
+        <translation>Fighter</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="392"/>
+        <location filename="mngrquerys.cpp" line="412"/>
         <source>Mech</source>
-        <translation type="vanished">Mech</translation>
+        <translation>Mech</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="392"/>
+        <location filename="mngrquerys.cpp" line="412"/>
         <source>Shojo-ai (Yuri)</source>
-        <translation type="vanished">Shojo-Ai (Yuri)</translation>
+        <translation>Shojo-Ai (Yuri)</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="418"/>
         <source>M@D</source>
-        <translation type="vanished">M@D</translation>
+        <translation>M@D</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="418"/>
+        <location filename="mngrquerys.cpp" line="431"/>
         <source>Romance</source>
-        <translation type="vanished">Romance</translation>
+        <translation>Romance</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="419"/>
         <source>Character Profile</source>
-        <translation type="vanished">Character Profile</translation>
+        <translation>Character Profile</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="419"/>
         <source>MEP</source>
-        <translation type="vanished">MEP</translation>
+        <translation>MEP</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="419"/>
         <source>Sentimental</source>
-        <translation type="vanished">Sentimental</translation>
+        <translation>Sentimental</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="420"/>
         <source>Comedy (Fun)</source>
-        <translation type="vanished">Comedy (Fun)</translation>
+        <translation>Comedy (Fun)</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="420"/>
         <source>GMV</source>
-        <translation type="vanished">GMV</translation>
+        <translation>GMV</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="420"/>
         <source>MMV</source>
-        <translation type="vanished">MMV</translation>
+        <translation>MMV</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="420"/>
         <source>Story</source>
-        <translation type="vanished">Story</translation>
+        <translation>Story</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="421"/>
         <source>Cross-Over</source>
-        <translation type="vanished">Cross-Over</translation>
+        <translation>Cross-Over</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="421"/>
         <source>Original Animation</source>
-        <translation type="vanished">Original Animation</translation>
+        <translation>Original Animation</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="421"/>
         <source>Trailer</source>
-        <translation type="vanished">Trailer</translation>
+        <translation>Trailer</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="422"/>
         <source>Dance</source>
-        <translation type="vanished">Dance</translation>
+        <translation>Dance</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="422"/>
         <source>Instrumental</source>
-        <translation type="vanished">Instrumental</translation>
+        <translation>Instrumental</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="422"/>
         <source>Psychedelic</source>
-        <translation type="vanished">Psychedelic</translation>
+        <translation>Psychedelic</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="428"/>
         <source>Friendship</source>
-        <translation type="vanished">Friendship</translation>
+        <translation>Friendship</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="428"/>
         <source>Policy</source>
-        <translation type="vanished">Policy</translation>
+        <translation>Policy</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="429"/>
         <source>Art-house</source>
-        <translation type="vanished">Art-house</translation>
+        <translation>Art-house</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="429"/>
         <source>Western</source>
-        <translation type="vanished">Western</translation>
+        <translation>Western</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="430"/>
         <source>Biography</source>
-        <translation type="vanished">Biography</translation>
+        <translation>Biography</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="430"/>
         <source>Gay theme</source>
-        <translation type="vanished">Gay theme</translation>
+        <translation>Gay theme</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="430"/>
         <source>Relationship</source>
-        <translation type="vanished">Relationship</translation>
+        <translation>Relationship</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="431"/>
         <source>Business</source>
-        <translation type="vanished">Business</translation>
+        <translation>Business</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="433"/>
         <source>Crime</source>
-        <translation type="vanished">Crime</translation>
+        <translation>Crime</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="433"/>
         <source>Sci-Fi</source>
-        <translation type="vanished">Sci-Fi</translation>
+        <translation>Sci-Fi</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="434"/>
         <source>Lesbian theme</source>
-        <translation type="vanished">Lesbian theme</translation>
+        <translation>Lesbian theme</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="434"/>
         <source>Sitcom</source>
-        <translation type="vanished">Sitcom</translation>
+        <translation>Sitcom</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="435"/>
         <source>Live-action</source>
-        <translation type="vanished">Live-action</translation>
+        <translation>Live-action</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="436"/>
         <source>Documentary</source>
-        <translation type="vanished">Documentary</translation>
+        <translation>Documentary</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="436"/>
         <source>Suspense</source>
-        <translation type="vanished">Suspense</translation>
+        <translation>Suspense</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="437"/>
         <source>Medicine</source>
-        <translation type="vanished">Medicine</translation>
+        <translation>Medicine</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="437"/>
         <source>Taiga</source>
-        <translation type="vanished">Taiga</translation>
+        <translation>Taiga</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="438"/>
         <source>Erotic</source>
-        <translation type="vanished">Erotic</translation>
+        <translation>Erotic</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="438"/>
         <source>Melodrama</source>
-        <translation type="vanished">Melodrama</translation>
+        <translation>Melodrama</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="439"/>
         <source>Military</source>
-        <translation type="vanished">Military</translation>
+        <translation>Military</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="440"/>
         <source>Musical</source>
-        <translation type="vanished">Musical</translation>
+        <translation>Musical</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="440"/>
         <source>Tokusatsu</source>
-        <translation type="vanished">Tokusatsu</translation>
+        <translation>Tokusatsu</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="441"/>
         <source>Mysticism</source>
-        <translation type="vanished">Mysticism</translation>
+        <translation>Mysticism</translation>
     </message>
     <message>
+        <location filename="mngrquerys.cpp" line="442"/>
         <source>TV Show</source>
-        <translation type="vanished">TV Show</translation>
+        <translation>TV Show</translation>
     </message>
 </context>
 <context>
     <name>Settings</name>
     <message>
+        <location filename="settings.ui" line="14"/>
         <source>Settings</source>
-        <translation type="vanished">Settings</translation>
+        <translation>Settings</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="47"/>
         <source>General</source>
-        <translation type="vanished">General</translation>
+        <translation>General</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="59"/>
         <source>Optional fields</source>
-        <translation type="vanished">Optional fields</translation>
+        <translation>Optional fields</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="71"/>
+        <location filename="dialogs/settings.cpp" line="490"/>
+        <location filename="dialogs/settings.cpp" line="494"/>
         <source>Import</source>
-        <translation type="vanished">Import</translation>
+        <translation>Import</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="83"/>
+        <location filename="settings.ui" line="876"/>
+        <location filename="dialogs/settings.cpp" line="447"/>
         <source>Export</source>
-        <translation type="vanished">Export</translation>
+        <translation>Export</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="95"/>
         <source>Style</source>
-        <translation type="vanished">Style</translation>
+        <translation>Style</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="159"/>
         <source>Global:</source>
-        <translation type="vanished">Global:</translation>
+        <translation>Global:</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="168"/>
         <source>Language:</source>
-        <translation type="vanished">Language:</translation>
+        <translation>Language:</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="184"/>
         <source>Network:</source>
         <oldsource>Network</oldsource>
-        <translation type="vanished">Network:</translation>
+        <translation>Network:</translation>
     </message>
     <message>
         <source>Check for update</source>
@@ -1529,145 +2049,296 @@
         <translation type="vanished">Auto search on shikimori</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="307"/>
         <source>Active sections:</source>
-        <translation type="vanished">Active sections:</translation>
+        <translation>Active sections:</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="313"/>
+        <location filename="settings.ui" line="655"/>
+        <location filename="settings.ui" line="823"/>
         <source>Anime</source>
-        <translation type="vanished">Anime</translation>
+        <translation>Anime</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="320"/>
+        <location filename="settings.ui" line="665"/>
+        <location filename="settings.ui" line="833"/>
         <source>Manga</source>
-        <translation type="vanished">Manga</translation>
+        <translation>Manga</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="327"/>
+        <location filename="settings.ui" line="675"/>
+        <location filename="settings.ui" line="843"/>
         <source>Amv</source>
-        <translation type="vanished">AMV</translation>
+        <translation>AMV</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="334"/>
+        <location filename="settings.ui" line="685"/>
+        <location filename="settings.ui" line="853"/>
         <source>Dorama</source>
-        <translation type="vanished">Dorama</translation>
+        <translation>Dorama</translation>
     </message>
     <message>
         <source>Item list:</source>
         <translation type="vanished">Item list:</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="212"/>
         <source>Checking updates</source>
-        <translation type="vanished">Checking updates</translation>
+        <translation>Checking updates</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="195"/>
         <source>Live search on shikimori</source>
-        <translation type="vanished">Live search on shikimori</translation>
+        <translation>Live search on shikimori</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="202"/>
+        <source>Use HTTPS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="settings.ui" line="221"/>
+        <source>Shikimori API URL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="settings.ui" line="233"/>
         <source>Limit of search results:</source>
-        <translation type="vanished">Limit of search results:</translation>
+        <translation>Limit of search results:</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="240"/>
         <source>Search output:</source>
-        <translation type="vanished">Search output:</translation>
+        <translation>Search output:</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="289"/>
         <source>Reload covers on update</source>
-        <translation type="vanished">Reload covers on update</translation>
+        <translation>Reload covers on update</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="344"/>
         <source>Item list:</source>
         <comment>Current active element</comment>
-        <translation type="vanished">Item list:</translation>
+        <translation>Item list:</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="350"/>
         <source>Sorting:</source>
-        <translation type="vanished">Sorting:</translation>
+        <translation>Sorting:</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="363"/>
         <source>Displayed field:</source>
-        <translation type="vanished">Displayed field:</translation>
+        <translation>Displayed field:</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="383"/>
         <source>Active item:</source>
-        <translation type="vanished">Active item:</translation>
+        <translation>Active item:</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="389"/>
         <source>Switch cover/directory</source>
-        <translation type="vanished">Switch cover/directory</translation>
+        <translation>Switch cover/directory</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="399"/>
         <source>Work directory:</source>
-        <translation type="vanished">Work directory:</translation>
+        <translation>Work directory:</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="490"/>
         <source>Anime:</source>
-        <translation type="vanished">Anime:</translation>
+        <translation>Anime:</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="496"/>
+        <location filename="settings.ui" line="526"/>
+        <location filename="settings.ui" line="556"/>
         <source>Alt title</source>
-        <translation type="vanished">Alt title</translation>
+        <translation>Alt title</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="503"/>
+        <location filename="settings.ui" line="563"/>
         <source>Director</source>
-        <translation type="vanished">Director</translation>
+        <translation>Director</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="510"/>
         <source>Postscoring</source>
-        <translation type="vanished">Postscoring</translation>
+        <translation>Postscoring</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="520"/>
         <source>Manga:</source>
-        <translation type="vanished">Manga:</translation>
+        <translation>Manga:</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="533"/>
         <source>Author</source>
-        <translation type="vanished">Author</translation>
+        <translation>Author</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="540"/>
         <source>Translation</source>
-        <translation type="vanished">Translator</translation>
+        <translation>Translator</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="550"/>
         <source>Dorama:</source>
-        <translation type="vanished">Dorama:</translation>
+        <translation>Dorama:</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="649"/>
         <source>Import sections:</source>
-        <translation type="vanished">Import sections:</translation>
+        <translation>Import sections:</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="698"/>
         <source>Import images</source>
-        <translation type="vanished">Import images</translation>
+        <translation>Import images</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="710"/>
         <source>Append</source>
-        <translation type="vanished">Append</translation>
+        <translation>Append</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="721"/>
         <source>Replace</source>
-        <translation type="vanished">Replace</translation>
+        <translation>Replace</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="817"/>
         <source>Export sections:</source>
-        <translation type="vanished">Export sections:</translation>
+        <translation>Export sections:</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="866"/>
         <source>Export images</source>
-        <translation type="vanished">Export images</translation>
+        <translation>Export images</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="921"/>
         <source>Style:</source>
-        <translation type="vanished">Style:</translation>
+        <translation>Style:</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="934"/>
+        <location filename="dialogs/settings.cpp" line="777"/>
         <source>System</source>
-        <translation type="vanished">System</translation>
+        <translation>System</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="942"/>
+        <source>+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="settings.ui" line="953"/>
+        <source>-</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="settings.ui" line="966"/>
         <source>Color settings:</source>
-        <translation type="vanished">Color settings:</translation>
+        <translation>Color settings:</translation>
     </message>
     <message>
+        <location filename="settings.ui" line="972"/>
+        <source>Window:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="settings.ui" line="999"/>
+        <source>WindowText:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="settings.ui" line="1026"/>
+        <source>Base:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="settings.ui" line="1053"/>
+        <source>AlternateBase:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="settings.ui" line="1080"/>
+        <source>ToolTipBase:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="settings.ui" line="1107"/>
+        <source>ToolTipText:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="settings.ui" line="1134"/>
+        <source>Text:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="settings.ui" line="1161"/>
+        <source>Button:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="settings.ui" line="1188"/>
+        <source>ButtonText:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="settings.ui" line="1215"/>
+        <source>BrightText:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="settings.ui" line="1242"/>
+        <source>Link:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="settings.ui" line="1269"/>
+        <source>Highlight:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="settings.ui" line="1296"/>
+        <source>HighlightedText:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="settings.ui" line="1326"/>
         <source>Save changes</source>
-        <translation type="vanished">Save changes</translation>
+        <translation>Save changes</translation>
+    </message>
+    <message>
+        <location filename="settings.ui" line="1348"/>
+        <source>ShowImportProgressBar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="settings.ui" line="1351"/>
+        <source>Switch progress bar or action buttons</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="settings.ui" line="1356"/>
+        <source>ShowExportProgressBar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="settings.ui" line="1359"/>
+        <source>Switch export button or progress bar</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>import</source>
@@ -1682,140 +2353,188 @@
         <translation type="vanished">Delete records and images</translation>
     </message>
     <message>
+        <location filename="dialogs/settings.cpp" line="789"/>
         <source>None</source>
-        <translation type="vanished">None</translation>
+        <translation>None</translation>
     </message>
     <message>
+        <location filename="dialogs/settings.cpp" line="790"/>
         <source>ASC</source>
-        <translation type="vanished">A-Z</translation>
+        <translation>A-Z</translation>
     </message>
     <message>
+        <location filename="dialogs/settings.cpp" line="791"/>
         <source>DESC</source>
-        <translation type="vanished">Z-A</translation>
+        <translation>Z-A</translation>
     </message>
     <message>
+        <location filename="dialogs/settings.cpp" line="792"/>
         <source>Year</source>
-        <translation type="vanished">Year</translation>
+        <translation>Year</translation>
     </message>
     <message>
+        <location filename="dialogs/settings.cpp" line="801"/>
         <source>Title</source>
-        <translation type="vanished">Title</translation>
+        <translation>Title</translation>
     </message>
     <message>
+        <location filename="dialogs/settings.cpp" line="802"/>
         <source>Alternative title</source>
-        <translation type="vanished">Alternative title</translation>
+        <translation>Alternative title</translation>
     </message>
     <message>
+        <location filename="dialogs/settings.cpp" line="184"/>
+        <location filename="dialogs/settings.cpp" line="190"/>
+        <location filename="dialogs/settings.cpp" line="478"/>
+        <location filename="dialogs/settings.cpp" line="506"/>
+        <location filename="dialogs/settings.cpp" line="1063"/>
+        <location filename="dialogs/settings.cpp" line="1076"/>
+        <location filename="dialogs/settings.cpp" line="1110"/>
+        <location filename="dialogs/settings.cpp" line="1114"/>
         <source>Warning</source>
-        <translation type="vanished">Warning</translation>
+        <translation>Warning</translation>
     </message>
     <message>
+        <location filename="dialogs/settings.cpp" line="184"/>
         <source>The directory for export isn&apos;t choose</source>
-        <translation type="vanished">The directory for export isn&apos;t choose</translation>
+        <translation>The directory for export isn&apos;t choose</translation>
     </message>
     <message>
+        <location filename="dialogs/settings.cpp" line="190"/>
         <source>The path shall be absolute</source>
-        <translation type="vanished">The path shall be absolute</translation>
+        <translation>The path shall be absolute</translation>
     </message>
     <message>
+        <location filename="dialogs/settings.cpp" line="238"/>
+        <location filename="dialogs/settings.cpp" line="283"/>
+        <location filename="dialogs/settings.cpp" line="322"/>
+        <location filename="dialogs/settings.cpp" line="355"/>
+        <location filename="dialogs/settings.cpp" line="542"/>
         <source>Critical</source>
-        <translation type="vanished">Critical error</translation>
+        <translation>Critical error</translation>
     </message>
     <message>
+        <location filename="dialogs/settings.cpp" line="238"/>
+        <location filename="dialogs/settings.cpp" line="283"/>
+        <location filename="dialogs/settings.cpp" line="322"/>
+        <location filename="dialogs/settings.cpp" line="355"/>
         <source>Cannot export data</source>
-        <translation type="vanished">Cannot export data</translation>
+        <translation>Cannot export data</translation>
     </message>
     <message>
+        <location filename="dialogs/settings.cpp" line="447"/>
         <source>Export is successfully finished</source>
-        <translation type="vanished">Export is successfully finished</translation>
+        <translation>Export is successfully finished</translation>
     </message>
     <message>
+        <location filename="dialogs/settings.cpp" line="454"/>
         <source>Choose a directory for export file</source>
-        <translation type="vanished">Choose a directory for export file</translation>
+        <translation>Choose a directory for export file</translation>
     </message>
     <message>
+        <location filename="dialogs/settings.cpp" line="466"/>
         <source>Choose a xml file for import</source>
-        <translation type="vanished">Choose a xml file for import</translation>
+        <translation>Choose a xml file for import</translation>
     </message>
     <message>
+        <location filename="dialogs/settings.cpp" line="478"/>
         <source>The imported file isn&apos;t selected</source>
-        <translation type="vanished">The imported file isn&apos;t selected</translation>
+        <translation>The imported file isn&apos;t selected</translation>
     </message>
     <message>
+        <location filename="dialogs/settings.cpp" line="490"/>
         <source>Import is successfully finished</source>
-        <translation type="vanished">Import is successfully finished</translation>
+        <translation>Import is successfully finished</translation>
     </message>
     <message>
+        <location filename="dialogs/settings.cpp" line="491"/>
         <source>Records it is imported:</source>
-        <translation type="vanished">Records it is imported:</translation>
+        <translation>Records it is imported:</translation>
     </message>
     <message>
+        <location filename="dialogs/settings.cpp" line="494"/>
         <source>Import failed</source>
-        <translation type="vanished">Import failed</translation>
+        <translation>Import failed</translation>
     </message>
     <message>
+        <location filename="dialogs/settings.cpp" line="507"/>
         <source>&lt;b&gt;Delete&lt;/b&gt; your database?&lt;br&gt;&lt;i&gt;Fields marked by a checkbox will be deleted&lt;/i&gt;</source>
-        <translation type="vanished">&lt;b&gt;Delete&lt;/b&gt; your database?&lt;br&gt;&lt;i&gt;Fields marked by a checkbox will be deleted&lt;/i&gt;</translation>
+        <translation>&lt;b&gt;Delete&lt;/b&gt; your database?&lt;br&gt;&lt;i&gt;Fields marked by a checkbox will be deleted&lt;/i&gt;</translation>
     </message>
     <message>
+        <location filename="dialogs/settings.cpp" line="542"/>
         <source>File is not open</source>
-        <translation type="vanished">Cannot open file</translation>
+        <translation>Cannot open file</translation>
     </message>
     <message>
+        <location filename="dialogs/settings.cpp" line="562"/>
         <source>Import of records</source>
-        <translation type="vanished">Import of records</translation>
+        <translation>Import of records</translation>
     </message>
     <message>
+        <location filename="dialogs/settings.cpp" line="612"/>
         <source>Copying of covers</source>
-        <translation type="vanished">Copying of covers</translation>
+        <translation>Copying of covers</translation>
     </message>
     <message>
+        <location filename="dialogs/settings.cpp" line="760"/>
         <source>English</source>
-        <translation type="vanished">English</translation>
+        <translation>English</translation>
     </message>
     <message>
+        <location filename="dialogs/settings.cpp" line="761"/>
         <source>Russian</source>
-        <translation type="vanished">Russian</translation>
+        <translation>Russian</translation>
     </message>
     <message>
+        <location filename="dialogs/settings.cpp" line="762"/>
         <source>Mixed</source>
-        <translation type="vanished">Mixed</translation>
+        <translation>Mixed</translation>
     </message>
     <message>
+        <location filename="dialogs/settings.cpp" line="983"/>
         <source>Choose a directory for application data</source>
-        <translation type="vanished">Choose a directory for application data</translation>
+        <translation>Choose a directory for application data</translation>
     </message>
     <message>
+        <location filename="dialogs/settings.cpp" line="1063"/>
         <source>It is impossible to delete system style</source>
-        <translation type="vanished">It is impossible to delete system style</translation>
+        <translation>It is impossible to delete system style</translation>
     </message>
     <message>
+        <location filename="dialogs/settings.cpp" line="1068"/>
         <source>Question</source>
-        <translation type="vanished">Question</translation>
+        <translation>Question</translation>
     </message>
     <message>
+        <location filename="dialogs/settings.cpp" line="1069"/>
         <source>You really want to remove the current style?</source>
-        <translation type="vanished">You really want to remove the current style?</translation>
+        <translation>You really want to remove the current style?</translation>
     </message>
     <message>
+        <location filename="dialogs/settings.cpp" line="1076"/>
         <source>Impossible to remove this style. Maybe your not accesss to removed.</source>
-        <translation type="vanished">Impossible to remove this style. Maybe your not accesss to removed.</translation>
+        <translation>Impossible to remove this style. Maybe your not accesss to removed.</translation>
     </message>
     <message>
+        <location filename="dialogs/settings.cpp" line="1100"/>
         <source>Style copying</source>
-        <translation type="vanished">Style copying</translation>
+        <translation>Style copying</translation>
     </message>
     <message>
+        <location filename="dialogs/settings.cpp" line="1101"/>
         <source>Enter name for new style:</source>
-        <translation type="vanished">Enter name for new style:</translation>
+        <translation>Enter name for new style:</translation>
     </message>
     <message>
+        <location filename="dialogs/settings.cpp" line="1110"/>
         <source>The entered name is empty</source>
-        <translation type="vanished">The entered name is empty</translation>
+        <translation>The entered name is empty</translation>
     </message>
     <message>
+        <location filename="dialogs/settings.cpp" line="1114"/>
         <source>Style with such name already exists</source>
-        <translation type="vanished">Style with such name already exists</translation>
+        <translation>Style with such name already exists</translation>
     </message>
 </context>
 </TS>
