@@ -5,7 +5,7 @@ TEMPLATE = app
 
 CONFIG += c++17
 
-VERSION = 1.4.4.4
+VERSION = 1.5.0.4
 #Last digit:
 # 0 - Pre-Alpha
 # 1 - Alpha

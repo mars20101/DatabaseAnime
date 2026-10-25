@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [1.5.0] - 2026-10-25
 - Ported the project to Qt6 (built and tested with Qt 6.11): removed Qt5-only APIs
   (`QRegExp`, `QDirModel`, `QString::null`, `QStandardPaths::DataLocation`, `QSet::toList`,
   `foreach`, `QPalette::ButtonText`, `QHBoxLayout::setMargin`, old `enterEvent` signature)
