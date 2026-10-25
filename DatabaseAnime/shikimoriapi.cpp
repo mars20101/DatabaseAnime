@@ -26,16 +26,11 @@ void ShikimoriApi::setLang(QString lang)
 QString ShikimoriApi::getShikimoriUrl()
 {
     QSettings cfg;
-    QVariant url = cfg.value( Options::Network::SHIKIMORI_API_URL );
-    if ( url.isValid() && (! url.toString().isEmpty()) ) {
-        return url.toString();
-    }
-
-    if( cfg.value( Options::Network::USE_SSL, true ) == true ) {
+    QString url = cfg.value( Options::Network::SHIKIMORI_API_URL, "https://shikimori.io" ).toString();
+    if ( url.isEmpty() ) {
         return "https://shikimori.io";
-    } else {
-        return "http://shikimori.io";
     }
+    return url;
 }
 
 /*! \~russian

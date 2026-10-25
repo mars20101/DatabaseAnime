@@ -197,16 +197,6 @@
                   </widget>
                  </item>
                  <item>
-                  <widget class="QCheckBox" name="ChBox_https">
-                   <property name="text">
-                    <string>Use HTTPS</string>
-                   </property>
-                   <property name="checked">
-                    <bool>true</bool>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
                   <widget class="QCheckBox" name="ChBox_CheckForUpdate">
                    <property name="text">
                     <string>Checking updates</string>

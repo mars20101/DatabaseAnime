@@ -80,3 +80,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Rewrote `README.md` and `README_eng.md` for this fork and kept the upstream READMEs
   verbatim as `README_orig.md` and `README_orig_eng.md`, adjusting only the link between
   the two archived pages
+- Removed the "Use HTTPS" checkbox and the `USE_SSL` setting, porting the cleanup the
+  upstream author had started on his never-merged `develop` branch in 2019: Shikimori only
+  answers over HTTPS now, so requests always use the `https://` scheme and the only network
+  option left is the "Shikimori API URL" field, which falls back to `https://shikimori.io`
+  both when saved empty and when read by `ShikimoriApi::getShikimoriUrl()`; a `lupdate`
+  pass dropped the dead "Use HTTPS" catalog entries and refreshed stale source locations
