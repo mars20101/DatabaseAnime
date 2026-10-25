@@ -60,3 +60,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   every `QFormLayout` of the dialog now gets `setLabelAlignment(Qt::AlignLeft)`; label
   alignment cannot be set through Qt Style Sheets (`QFormLayout:labelfield` is ignored by Qt),
   hence the code, and the field column keeps its width and positions
+- Fixed settings dialog fields being squeezed down to their size hint under Qt 6: the color
+  swatches turned into small squares and combos or the search-limit slider row stopped
+  spanning their group box once the window is wide. Qt 6 changed QFormLayout's default
+  fieldGrowthPolicy (SH_FormLayoutFieldGrowthPolicy) from AllNonFixedFieldsGrow to
+  MinimumFieldSizePolicy, which keeps fields living in a nested layout (the color pickers, the
+  slider+spinbox row) and non-expanding widgets at their sizeHint() instead of stretching them
+  across the field column; every QFormLayout of the dialog now gets
+  setFieldGrowthPolicy(AllNonFixedFieldsGrow), restoring the Qt 5 default in the same loop that
+  already fixes label alignment

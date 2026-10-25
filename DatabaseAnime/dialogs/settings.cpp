@@ -65,9 +65,17 @@ Settings::Settings(MngrConnection &MngrCon, QWidget *parent) :
     // By default QFormLayout right-aligns labels (SH_FormLayoutLabelAlignment = AlignRight),
     // so label-only rows are indented while fields start at the left edge of the group.
     // Align labels to the left so they line up with the fields.
+    //
+    // Qt 6 also changed QFormLayout's default fieldGrowthPolicy
+    // (SH_FormLayoutFieldGrowthPolicy) from AllNonFixedFieldsGrow to MinimumFieldSizePolicy,
+    // so nested-layout fields (the color swatches, the search-limit slider row) and
+    // non-expanding widgets collapse down to their size hint. Restore the Qt 5 default so
+    // the fields stretch across the group again, as they did before.
     const QList<QFormLayout *> formLayouts = findChildren<QFormLayout *>();
-    for (QFormLayout *FLay : formLayouts)
+    for (QFormLayout *FLay : formLayouts) {
         FLay->setLabelAlignment( Qt::AlignLeft );
+        FLay->setFieldGrowthPolicy( QFormLayout::AllNonFixedFieldsGrow );
+    }
 
     QSettings settings;
     this->restoreGeometry( settings.value(Options::Dialogs::Config::Geometry).toByteArray() );
