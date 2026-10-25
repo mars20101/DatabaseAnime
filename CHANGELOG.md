@@ -86,3 +86,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   option left is the "Shikimori API URL" field, which falls back to `https://shikimori.io`
   both when saved empty and when read by `ShikimoriApi::getShikimoriUrl()`; a `lupdate`
   pass dropped the dead "Use HTTPS" catalog entries and refreshed stale source locations
+- Fixed elided anime-list titles ("…") starting left of the titles that fit the column:
+  breeze-qt6 insets its `SE_ItemViewItemText` subelement rect by however much free space
+  the text spares, so a title that does not fit gets a zero inset and is drawn at the
+  unpadded position while fitting rows keep the full padding; the new `ElidedListDelegate`
+  installed on the list view probes the style for that length-dependent inset (comparing
+  the text rects of an empty and of an overlong title) and pre-elides the title to the
+  padded width, which makes Breeze take its "text fits" path and draw every row at the
+  same indent; styles whose text rect does not depend on the text length (Fusion and
+  others) return identical probe rects and are drawn exactly as before

@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include "widgets/lookprogressbar.h"
 #include "widgets/scrollcontent.h"
+#include "widgets/elidedlistdelegate.h"
 #include "definespath.h"
 #include "dbalocalization.h"
 
@@ -93,6 +94,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->lineEdit_Search->setFocus();
     QueryModel_ListItemsSection = new QSqlQueryModel(this);
     ui->TreeView_List->setModel(QueryModel_ListItemsSection);
+    ui->TreeView_List->setItemDelegate(new ElidedListDelegate(ui->TreeView_List));
 
     reloadSectionsList();
     reloadFiltersList();

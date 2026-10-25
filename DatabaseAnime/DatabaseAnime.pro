@@ -41,7 +41,8 @@ HEADERS += \
     shikimoriapi.h \
     widgets/colorpicker.h \
     stylemanager.h \
-    imageloader.h
+    imageloader.h \
+    widgets/elidedlistdelegate.h
 
 SOURCES += \
     main.cpp \
