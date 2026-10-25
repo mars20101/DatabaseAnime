@@ -32,9 +32,9 @@ QString ShikimoriApi::getShikimoriUrl()
     }
 
     if( cfg.value( Options::Network::USE_SSL, true ) == true ) {
-        return "https://shikimori.org";
+        return "https://shikimori.io";
     } else {
-        return "http://shikimori.org";
+        return "http://shikimori.io";
     }
 }
 

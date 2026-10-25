@@ -93,7 +93,7 @@
          <item>
           <widget class="QToolButton" name="TBtn_Search">
            <property name="toolTip">
-            <string>Search on shikimori.org</string>
+            <string>Search on shikimori.io</string>
            </property>
            <property name="text">
             <string/>

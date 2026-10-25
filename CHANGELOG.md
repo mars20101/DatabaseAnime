@@ -9,7 +9,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   (`QRegExp`, `QDirModel`, `QString::null`, `QStandardPaths::DataLocation`, `QSet::toList`,
   `foreach`, `QPalette::ButtonText`, `QHBoxLayout::setMargin`, old `enterEvent` signature)
   instead of using Qt5Compat
-- Added new settings for change Shikimori API URL
 - Fixed tags panel in edit dialogs (anime, manga, dorama, AMV): tags saved in a record are now
   marked in the genre list when opening for editing, so they can be added/removed by clicking,
   and saving no longer duplicates tags present both in the list selection and the text field
@@ -69,3 +68,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   across the field column; every QFormLayout of the dialog now gets
   setFieldGrowthPolicy(AllNonFixedFieldsGrow), restoring the Qt 5 default in the same loop that
   already fixes label alignment
+- Updated the default Shikimori address to `https://shikimori.io`: `shikimori.org` no longer
+  answers, while the API keeps the very same paths on `.io`. The default in
+  `ShikimoriApi::getShikimoriUrl()`, the doc comments and the "Search on shikimori.io"
+  tooltips of the add-anime and add-manga dialogs, together with the ru/en translation
+  catalogs, now point to the new domain
+- Removed the `vk.com` button from the welcome page (the upstream VK group has nothing to do
+  with this fork) and pointed the `GitHub` button and the update check at the fork
+  repository; the update check now ignores an empty reply, which is what GitHub answers for
+  a repository without any releases
+- Rewrote `README.md` and `README_eng.md` for this fork and kept the upstream READMEs
+  verbatim as `README_orig.md` and `README_orig_eng.md`, adjusting only the link between
+  the two archived pages

@@ -64,7 +64,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     // Verification of the new version
     if( settings.value(Options::Network::CHECK_UPDATES, true).toBool() ){
-        QUrl url("https://api.github.com/repos/LibertaSoft/DatabaseAnime/releases");
+        QUrl url("https://api.github.com/repos/mars20101/DatabaseAnime/releases");
         QNetworkAccessManager *manager = new QNetworkAccessManager(this);
         connect(manager, &QNetworkAccessManager::finished,
                 this, &MainWindow::replyVersionVerificationFinished);
@@ -102,6 +102,12 @@ void MainWindow::replyVersionVerificationFinished(QNetworkReply* r){
     QJsonDocument doc = QJsonDocument::fromJson( r->readAll() );
 
     QJsonArray arr  = doc.array();
+    // A repository without releases answers with an empty array: arr.at(0) would be out of range
+    if( arr.isEmpty() ){
+        r->deleteLater();
+        return;
+    }
+
     QJsonObject obj = arr.at(0).toObject();
 
     QString verFromGit = obj["tag_name"].toString();
@@ -1041,12 +1047,7 @@ void MainWindow::on_TreeView_Dir_activated(const QModelIndex &index)
     QDesktopServices::openUrl( QUrl::fromLocalFile( m->filePath(index) ) );
 }
 
-void MainWindow::on_PBtn_url_vk_clicked()
-{
-    QDesktopServices::openUrl( QUrl("https://vk.com/db_anime") );
-}
-
 void MainWindow::on_PBtn_url_github_clicked()
 {
-    QDesktopServices::openUrl( QUrl("https://github.com/LibertaSoft/DatabaseAnime") );
+    QDesktopServices::openUrl( QUrl("https://github.com/mars20101/DatabaseAnime") );
 }

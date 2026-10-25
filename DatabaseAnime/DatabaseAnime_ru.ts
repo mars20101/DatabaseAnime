@@ -193,8 +193,8 @@
     </message>
     <message>
         <location filename="addanime.ui" line="93"/>
-        <source>Search on shikimori.org</source>
-        <translation>Найти на shikimori.org</translation>
+        <source>Search on shikimori.io</source>
+        <translation>Найти на shikimori.io</translation>
     </message>
     <message>
         <location filename="addanime.ui" line="110"/>
@@ -615,8 +615,8 @@
     </message>
     <message>
         <location filename="addmanga.ui" line="96"/>
-        <source>Search on shikimori.org</source>
-        <translation>Найти на shikimori.org</translation>
+        <source>Search on shikimori.io</source>
+        <translation>Найти на shikimori.io</translation>
     </message>
     <message>
         <location filename="addmanga.ui" line="116"/>

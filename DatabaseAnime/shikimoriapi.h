@@ -11,20 +11,20 @@
 #include <QDate>
 #include <QMap>
 
-//const QString shikimoriUrl("https://shikimori.org");
+//const QString shikimoriUrl("https://shikimori.io");
 
 /*! \~russian
- * \brief Класс взаимодействия с API сайта shikimori.org
+ * \brief Класс взаимодействия с API сайта shikimori.io
  *
- * Класс предоставляющий доступ к api сайта shikimori.org
+ * Класс предоставляющий доступ к api сайта shikimori.io
  * интерфейс взаимоидействие которого происходит
  * посредствам сигналов и слотов В ответ на запрашиваемые действия класс излучает сигналы
  * с уже распарсенными данными, когда они будут загружены.
  */
 /*! \~english
- * \brief Class interactions with site API shikimori.org
+ * \brief Class interactions with site API shikimori.io
  *
- * Class the providing access to site shikimori.org api
+ * Class the providing access to site shikimori.io api
  * the interface which vzaimoideystviye occurs
  * by means of signals and slots In response to required actions the class radiates signals
  * with already rasparsenny data when they are loaded.

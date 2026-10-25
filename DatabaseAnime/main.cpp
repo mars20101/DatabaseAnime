@@ -52,7 +52,7 @@ void myMessageOutput(QtMsgType type, const QMessageLogContext &context, const QS
     - Класс MngrConnection предоставляет API для управления соединением с БД.
     - Класс DefinesPath - предоставляет набор статических методов возвращающих пути к определённым местам в ФС
     - В файле globalEnum описаны основные перечисления использующиеся в программе
-    - Класс shikimoriApi - инкапсулирует API для работы с сайтом [shikimori.org](http://shikimori.org)
+    - Класс shikimoriApi - инкапсулирует API для работы с сайтом [shikimori.io](https://shikimori.io)
     - Классы XmlDbaReader и XmlDbaWriter предоставляеют интерфейс для чтения и записи экспортного формата DBA.
     - Виджет ImageCover - представляет собой переписанный QLabel с возможностью Drag&Dropa изображений.
     - Виджет LookProgressBar - представляет собой ProgressBar с кнопками "+" и "-" отображающий прогресс просмотра, п так же поддерживает увеличение и уменьшение по средствам колёсика мыши.
