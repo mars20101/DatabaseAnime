@@ -1,0 +1,30 @@
+name: Update Gentoo Overlay
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'packaging/gentoo/**' # Запускать только если были изменения в этой папке
+
+permissions:
+  contents: write # Разрешить боту пушить ветку в репозиторий
+
+jobs:
+  update-overlay:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Обязательно выкачать всю историю для корректной работы subtree
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Split and push subtree
+        run: |
+          git subtree split -P packaging/gentoo -b gentoo-overlay
+          git push origin gentoo-overlay --force
