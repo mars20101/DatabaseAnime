@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>nyehor@gmail.com</email>
+		<name>Yegor Novak</name>
+	</maintainer>
+	<longdescription lang="en">
+		Database Anime is a desktop application for creating and maintaining
+		personal database of anime, manga, doramas and AMVs, with online
+		data import from Shikimori over HTTPS.
+	</longdescription>
+	<upstream>
+		<remote-id type="github">mars20101/DatabaseAnime</remote-id>
+	</upstream>
+</pkgmetadata>
