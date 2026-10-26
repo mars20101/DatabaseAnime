@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+- Added `packaging/` directory with build recipes for Linux distributions: Arch Linux PKGBUILDs
+  (`databaseanime` for the latest tagged release, `databaseanime-git` for the live `master`
+  branch, both with a `.desktop` file) and a self-contained Gentoo mini-overlay
+  (`app-misc/databaseanime` with a release and a live ebuild), also published as the
+  `gentoo-overlay` branch for automatic Portage sync
+
 ## [1.5.0] - 2026-10-25
 - Ported the project to Qt6 (built and tested with Qt 6.11): removed Qt5-only APIs
   (`QRegExp`, `QDirModel`, `QString::null`, `QStandardPaths::DataLocation`, `QSet::toList`,

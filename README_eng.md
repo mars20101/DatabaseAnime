@@ -39,7 +39,7 @@ Details are in [CHANGELOG.md](./CHANGELOG.md).
 - The program is provided **"as is"**, without any warranties, including no warranty of working
   fitness or fitness for any particular purpose. You are responsible for the safety of your database.
 - Verified on Linux (KDE, Breeze style) with Qt 6.11.2. Not built or tested on Windows and macOS.
-- The [AUR](https://aur.archlinux.org/packages/databaseanime/) package belongs to the original Qt5
+- The [AUR](https://aur.archlinux.org/packages/databaseanime-git/) package belongs to the original Qt5
   version: this fork does not update or support it.
 - Bugs and requests for the original project go upstream:
   [issues](https://github.com/LibertaSoft/DatabaseAnime/issues).
@@ -78,6 +78,20 @@ mv ../DatabaseAnime/*.qm ~/.local/share/LibertaSoft/DatabaseAnime/l10n/
 The application looks for `l10n/DatabaseAnime_<lang>.qm` in the data directories:
 `~/.local/share/LibertaSoft/DatabaseAnime/l10n`, plus the system-wide
 `/usr/local/share/LibertaSoft/DatabaseAnime/l10n` and `/usr/share/LibertaSoft/DatabaseAnime/l10n`.
+
+### Installing from packages
+
+The repository contains a [`packaging/`](./packaging/) directory with recipes for Linux
+distributions; detailed instructions are in [packaging/README_eng.md](./packaging/README_eng.md):
+
+- **Arch Linux**: `packaging/arch/databaseanime` (stable release) and
+  `packaging/arch/databaseanime-git` (live `master` branch). The PKGBUILDs are meant for local
+  builds with `makepkg`.
+- **Gentoo**: a small overlay, connected either from the dedicated branch
+  [`gentoo-overlay`](https://github.com/mars20101/DatabaseAnime/tree/gentoo-overlay) (the overlay
+  content sits at the root of that branch) or straight from `packaging/gentoo`.
+
+These packages are unofficial, made by the fork author and, like everything else here, "as is".
 
 ### Where the program stores its data
 

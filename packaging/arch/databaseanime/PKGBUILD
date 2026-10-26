@@ -1,0 +1,51 @@
+# Maintainer: Yegor Novak <nyehor@gmail.com>
+pkgname=databaseanime
+pkgver=1.5.0
+pkgrel=1
+pkgdesc="Management of your collection Anime, Manga, AMV and Dorama"
+arch=(x86_64)
+url="https://github.com/mars20101/DatabaseAnime"
+license=('GPL-3')
+depends=(qt6-base hicolor-icon-theme)
+makedepends=(qt6-tools)
+conflicts=(databaseanime-git)
+provides=('databaseanime')
+options=('!debug')
+source=(
+  "$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz"
+  "DatabaseAnime.desktop"
+)
+sha256sums=(
+  '537b99e4d271a40dc6ec59e71eba673f5f99ef1d277af3f49e398724e3e7d64d'
+  'fd57fb1ed4e902991f3b80f8098b4594040c6e3d27f938591b9217ee17a8ab91'
+)
+
+build() {
+  cd "DatabaseAnime-$pkgver/DatabaseAnime"
+
+  mkdir -p "$srcdir/build" "$srcdir/build/l10n" || return 1
+  lrelease6 DatabaseAnime_ru.ts -qm "$srcdir/build/l10n/DatabaseAnime_ru.qm" || return 1
+  lrelease6 DatabaseAnime_en.ts -qm "$srcdir/build/l10n/DatabaseAnime_en.qm" || return 1
+
+  cd "$srcdir/build" || return 1
+  qmake6 ../DatabaseAnime-$pkgver/DatabaseAnime/DatabaseAnime.pro -config release || return 1
+  make
+}
+
+package() {
+  install -Dm755 build/DatabaseAnime "$pkgdir/usr/bin/dba"
+
+  install -Dm644 build/l10n/DatabaseAnime_ru.qm \
+    "$pkgdir/usr/share/LibertaSoft/DatabaseAnime/l10n/DatabaseAnime_ru.qm"
+  install -Dm644 build/l10n/DatabaseAnime_en.qm \
+    "$pkgdir/usr/share/LibertaSoft/DatabaseAnime/l10n/DatabaseAnime_en.qm"
+
+  install -Dm644 "DatabaseAnime-$pkgver/DatabaseAnime/images/DBA_Icon-64.png" \
+    "$pkgdir/usr/share/icons/hicolor/64x64/apps/databaseanime.png"
+  install -Dm644 "DatabaseAnime-$pkgver/DatabaseAnime/images/DBA_Icon-256.png" \
+    "$pkgdir/usr/share/icons/hicolor/256x256/apps/databaseanime.png"
+  install -Dm644 "DatabaseAnime-$pkgver/DatabaseAnime/images/DBA_Icon-512.png" \
+    "$pkgdir/usr/share/icons/hicolor/512x512/apps/databaseanime.png"
+
+  install -Dm644 "DatabaseAnime.desktop" "$pkgdir/usr/share/applications/DatabaseAnime.desktop"
+}

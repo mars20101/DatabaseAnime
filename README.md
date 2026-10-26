@@ -41,7 +41,7 @@
   вашей базы данных лежит на вас.
 - Проверено на Linux (KDE, стиль Breeze) с Qt 6.11.2. Под Windows и macOS не собиралось и не
   тестировалось.
-- Пакет в [AUR](https://aur.archlinux.org/packages/databaseanime/) относится к оригинальной
+- Пакет в [AUR](https://aur.archlinux.org/packages/databaseanime-git/) относится к оригинальной
   Qt5-версии: этот форк его не обновляет и не поддерживает.
 - Баги и пожелания к оригинальному проекту — в upstream:
   [issues](https://github.com/LibertaSoft/DatabaseAnime/issues).
@@ -78,6 +78,20 @@ mv ../DatabaseAnime/*.qm ~/.local/share/LibertaSoft/DatabaseAnime/l10n/
 
 Приложение ищет `l10n/DatabaseAnime_<lang>.qm` в каталогах данных: `~/.local/share/LibertaSoft/DatabaseAnime/l10n`,
 а также системных `/usr/local/share/LibertaSoft/DatabaseAnime/l10n` и `/usr/share/LibertaSoft/DatabaseAnime/l10n`.
+
+### Установка из пакетов
+
+В репозитории есть каталог [`packaging/`](./packaging/) с рецептами для Linux-дистрибутивов;
+подробные инструкции — в [packaging/README.md](./packaging/README.md):
+
+- **Arch Linux**: `packaging/arch/databaseanime` (стабильный релиз) и
+  `packaging/arch/databaseanime-git` (живая ветка `master`). PKGBUILD рассчитаны на локальную
+  сборку через `makepkg`.
+- **Gentoo**: мини-оверлей, подключается из отдельной ветки
+  [`gentoo-overlay`](https://github.com/mars20101/DatabaseAnime/tree/gentoo-overlay) (содержимое
+  оверлея лежит в корне той ветки) или прямо из `packaging/gentoo`.
+
+Пакеты неофициальные, делаются форк-автором и, как всё здесь, — «как есть».
 
 ### Где программа хранит данные
 
